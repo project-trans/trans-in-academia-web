@@ -2,70 +2,71 @@
   <head>
     <meta charset="utf-8">
     <title> Trans in Academia! - An Association for Us. </title>
-  <style>
-    .content {
-        max-width: 500px;
-        margin: auto;
-    }
-    .brand {
-        display: flex;
-        align-items: center;
-    }
-    .post {
-        display: grid;
-    }
-    .iroiro {
-        background: -webkit-gradient(linear, left top, right top,
-                                     to(rgb(220, 121, 149)),
-                                     from(rgb( 90, 177, 196)));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-  </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Comme:wght@200&family=Junge&display=swap');
+
+      .container {
+          max-width: 100%;
+          margin: auto;
+          display: grid;
+          grid-template-columns: 0.5fr 1fr 0.5fr;
+      }
+      .brand {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          font-family: 'Junge', serif;
+      }
+      .post {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          font-family: 'Junge', serif;
+      }
+      .bottom {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          font-family: 'Comme', sans-serif;
+          text-align: center;
+      }
+
+      .pic {
+          width: 100%;
+      }
+
+      h2 {
+          text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <div class="content">
+    <div class="container">
       <div class="brand">
-        <!--div>
-          <img src="logo.jpg" alt="Trans in Academia Logo"
-               height="100px" style="mix-blend-mode:multiply;clip-path:polygon(0% 0%, 100% 0%, 100% 85%, 0% 85%);top:12px;">
-        </div>
-        <div class="title">
-          <h1 class="iroiro"> Trans in Academia! Web </h1>
-          <p class="iroiro"><i> An association for diasporic Chinese and Canadian scholars, students and enthusiasts. </i></p>
-        </div-->
-        <img src="banner.jpg" alt="Trans in Academia Logo" width="500px">
+        <img class="pic" src="banner.jpg" alt="Trans in Academia Logo">
+        <p> We are an association for diasporic Chinese and Canadian scholars, students and enthusiasts. </p>
       </div>
-      <div class="post">
 
-        <center>
-          <p>We are an association for diasporic Chinese and Canadian scholars, students and enthusiasts.</p>
+      <div class="post">
           <p> View our collectively edited <a href=https://uniguide.transacademic.org>Transgender University Guidance</a>! </p>
           <p> Also view our <a href="https://t.me/transAcademia">Telegram Channel</a> for more information! </p>
+          <p> We are hiring editors! Please contact <a href="mailto:info@oau.edu.kg">info@oau.edu.kg</a>.</p>
           <p> &nbsp; </p>
 
           <h2> Events </h2>
-          <img src="deleuze-reading.jpg" alt="Deleuze reading group"
-               width="500px"
-               align="middle">
+          <img class="pic" src="deleuze-reading.jpg" alt="Deleuze reading group">
           <p> Reading Group of <i> A Thousand Plateaus </i> <br /> Starting online from 2023-04-22 </p>
           <p> &nbsp; </p>
 
           <h2> Broadcasts </h2>
-          <img src="https://images.squarespace-cdn.com/content/v1/5e656aae9f71a6204f2b1448/82279333-ce11-42a8-a6e1-50ebc47261f5/%E5%A5%96%E5%AD%A6%E9%87%91%E6%B5%B7%E6%8A%A52023.png"
-               alt="CRN Rainbow scholarship"
-               width="500px" align="middle">
-          <p> CRN 彩虹奖学金 2023 开始申请！鼓励来自世界的华人性少数申请者！ <br / > 截止日期 2023-7-31，点击查看 <a href="https://www.crn.ngo/scholarship">详细信息</a> 。</p>
-          <p> &nbsp; </p>
+          <img class="pic" src="https://images.squarespace-cdn.com/content/v1/5e656aae9f71a6204f2b1448/82279333-ce11-42a8-a6e1-50ebc47261f5/%E5%A5%96%E5%AD%A6%E9%87%91%E6%B5%B7%E6%8A%A52023.png" alt="CRN Rainbow scholarship">
+          <p> CRN 彩虹奖学金 2023 开始申请！鼓励来自世界的华人性少数申请者！ <br /> 截止日期 2023-7-31，点击查看 <a href="https://www.crn.ngo/scholarship">详细信息</a> 。</p>
 
-          <p> We are hiring editors! Please contact <a href="mailto:info@oau.edu.kg">info@oau.edu.kg</a>.</p>
-          <p>
-            <img alt=CreativeCommons style=border-width:0 width=20 height=20 src=https://creativecommons.org/images/deed/cc_icon_black_x2.png>
-            <img alt=Attribution style=border-width:0 width=20 height=20 src=https://creativecommons.org/images/deed/attribution_icon_black_x2.png>
-            <br /> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"> CC BY 4.0</a> Licensed
-            <br /> © <a href="https://oneamongus.ca">One Among Us Transgender Support</a> 2023
-          </p>
-        </center>
+          <div class="bottom">
+            <p>
+              <img alt=CreativeCommons style=border-width:0 width=20 height=20 src=https://creativecommons.org/images/deed/cc_icon_black_x2.png>
+              <img alt=Attribution style=border-width:0 width=20 height=20 src=https://creativecommons.org/images/deed/attribution_icon_black_x2.png>
+              <br /> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"> CC BY 4.0</a> Licensed
+              <br /> © <a href="https://oneamongus.ca">One Among Us Transgender Support</a> 2023
+            </p>
+          </div>
       </div>
   </body>
 </html>
