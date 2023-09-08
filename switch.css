@@ -23,19 +23,19 @@
     --crater: hsl(221, 16%, 68%);
     --bear-speed: 10s;
 
-    --bg: hsl(219, 30%, 95%);
+    --bg: #d9f0fe;
     --color: hsl(219 30% 20%);
     --a-color: hsl(3 80% 40%);
     --dark-mode-flag: 0;
-    --mix-blend-mode: multiply;
+    --banner-src: url("./TIA_BannerL@2x.png");
 }
 
 [data-dark-mode=true] {
-    --bg: hsl(219, 30%, 12%);
-    --color: hsl(219 30% 98%);
-    --a-color: hsl(3 80% 89%);
+    --bg: #013566;
+    --color: hsl(219 30% 100%);
+    --a-color: hsl(3 100% 89%);
     --dark-mode-flag: 1;
-    --mix-blend-mode: normal;
+    --banner-src: url("./TIA_BannerD@2x.png");
 }
 
 body, header {
@@ -50,8 +50,11 @@ a {
 }
 
 header .banner {
-    mix-blend-mode: var(--mix-blend-mode);
     background-color: #fff;
+}
+
+header img {
+    content: var(--banner-src);
 }
 
 footer .icon {
