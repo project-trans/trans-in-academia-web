@@ -49,10 +49,6 @@ a {
     text-decoration: none;
 }
 
-header .banner {
-    background-color: #fff;
-}
-
 header img {
     content: var(--banner-src);
 }
