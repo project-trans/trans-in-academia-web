@@ -62,6 +62,7 @@ p {
 
 img {
     max-inline-size: 100%;
+    vertical-align: middle;
 }
 
 header {
