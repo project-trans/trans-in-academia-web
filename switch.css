@@ -66,6 +66,7 @@ footer .icon {
 }
 
 .toggle {
+    margin: 5px;
     -webkit-tap-highlight-color: transparent;
     width: var(--width);
     /* random attempts at tackling the overflow iOS issue */
@@ -93,7 +94,7 @@ footer .icon {
     box-shadow:
 	calc(var(--width) * 0) calc(var(--width) * 0.02) calc(var(--width) * 0.01) calc(var(--width) * -0.0025) hsl(210 10% 100% / 0.95),
 	calc(var(--width) * 0) calc(var(--width) * -0.02) calc(var(--width) * 0.01) calc(var(--width) * -0.0025) hsl(210 10% 10% / 0.2),
-	calc(var(--width) * 0) calc(var(--width) * 0.02) calc(var(--width) * 0.5) 0 hsl(210 10% 100% / 0.15);
+	calc(var(--width) * 0) calc(var(--width) * 0.02) calc(var(--width) * 0.5) 0 hsla\(0, 0%, 100%, 0);
 }
 
 .toggle:after {
