@@ -65,6 +65,45 @@ img {
     vertical-align: middle;
 }
 
+navigate {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $nav-bar / 1.5;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 10000;
+  border: 1px solid #e7e7e7;
+  background-color: #013567;
+  img {
+    width: 2.333333rem;
+    height: 2.333333rem;
+  }
+  li {
+    float: left;
+    .title {
+      color: #ffffff;
+    }
+    .notcurrent {
+      background-color: #013567;
+      color: #ffffff;
+    }
+    .current {
+      background-color: #a1d5fb;
+      color: #000000;
+    }
+  }
+  a {
+    display: block;
+    padding-top: .538461rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    height:  2.333333rem;
+  }
+}
+
 header {
     grid-column-start: 2;
     grid-column-end: 3;
