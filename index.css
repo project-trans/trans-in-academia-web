@@ -27,7 +27,8 @@ body {
     margin-inline: auto;
     margin-block-start: 0;
     margin-block-end: 2rem;
-    font-family: Junge, serif;
+    font-family: 'eb garamond', serif;
+    font-size: 18px;
     display: grid;
     grid-template-rows: auto auto auto auto;
 }
@@ -96,6 +97,7 @@ navigate {
         padding-top: .538461rem;
         padding-left: .5rem;
         padding-right: .5rem;
+        padding-bottom: .538461rem;
         height:  2.333333rem;
     }
 }
