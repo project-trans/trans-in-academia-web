@@ -2,22 +2,10 @@
     body {
         grid-template-columns: 0.5fr 1fr 0.5fr;
     }
-    toggle-button {
-        position: fixed;
-        transform: scale(0.3);
-        left: 70vw;
-        top: 1em;
-    }
 }
 @media (orientation: portrait) {
     body {
         grid-template-columns: 0.075fr 1fr 0.075fr;
-    }
-    toggle-button {
-        position: fixed;
-        transform: scale(0.2) scale(-1, 1) rotate(0.25turn);
-        top: 1em;
-        left: 73vw;
     }
 }
 
@@ -66,42 +54,50 @@ img {
 }
 
 navigate {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: $nav-bar / 1.5;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  z-index: 10000;
-  border: 1px solid #e7e7e7;
-  background-color: #013567;
-  img {
-    width: 2.333333rem;
+    position: sticky;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1;
+    top: 0;
+    width: 100%;
     height: 2.333333rem;
-  }
-  li {
-    float: left;
-    .title {
-      color: #ffffff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 10000;
+    border: 1px solid #e7e7e7;
+    background-color: #013567;
+    img {
+        width: 2.333333rem;
+        height: 2.333333rem;
     }
-    .notcurrent {
-      background-color: #013567;
-      color: #ffffff;
+    li {
+        float: left;
+        overflow: hidden;
+        .title {
+            color: #ffffff;
+        }
+        .notcurrent {
+            background-color: #013567;
+            color: #ffffff;
+        }
+        .current {
+            background-color: #a1d5fb;
+            color: #000000;
+        }
     }
-    .current {
-      background-color: #a1d5fb;
-      color: #000000;
+    toggle-button {
+        float: right;
     }
-  }
-  a {
-    display: block;
-    padding-top: .538461rem;
-    padding-left: .5rem;
-    padding-right: .5rem;
-    height:  2.333333rem;
-  }
+    a {
+        overflow: hidden;
+        display: block;
+        padding-top: .538461rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        height:  2.333333rem;
+    }
 }
 
 header {
