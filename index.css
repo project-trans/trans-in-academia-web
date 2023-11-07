@@ -53,7 +53,38 @@ img {
     max-inline-size: 100%;
     vertical-align: middle;
 }
+navigate img {
+    width: 2.333333rem;
+    height: 2.333333rem;
+}
+navigate li {
+    float: left;
+    overflow: hidden;
 
+}
+navigate toggle-button {
+    float: right;
+}
+navigate a {
+    overflow: hidden;
+    display: block;
+    padding-top: .538461rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .538461rem;
+    height:  2.333333rem;
+}
+navigate li .title {
+    color: #ffffff;
+}
+navigate li .notcurrent {
+    background-color: #013567;
+    color: #ffffff;
+}
+navigate li .current {
+    background-color: #a1d5fb;
+    color: #000000;
+}
 navigate {
     position: sticky;
     grid-column-start: 1;
@@ -69,37 +100,8 @@ navigate {
     z-index: 10000;
     border: 1px solid #e7e7e7;
     background-color: #013567;
-    img {
-        width: 2.333333rem;
-        height: 2.333333rem;
-    }
-    li {
-        float: left;
-        overflow: hidden;
-        .title {
-            color: #ffffff;
-        }
-        .notcurrent {
-            background-color: #013567;
-            color: #ffffff;
-        }
-        .current {
-            background-color: #a1d5fb;
-            color: #000000;
-        }
-    }
-    toggle-button {
-        float: right;
-    }
-    a {
-        overflow: hidden;
-        display: block;
-        padding-top: .538461rem;
-        padding-left: .5rem;
-        padding-right: .5rem;
-        padding-bottom: .538461rem;
-        height:  2.333333rem;
-    }
+
+
 }
 
 header {
