@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <li><a class="placeholder"></a></li>
-    <li><img src="https://oau.edu.kg/TIA_LogoD@3x.png"></li>
+    <li><img src="/TIA_LogoBG@3x.png"></li>
     <li><a class="title">Trans in Academia! </a></li>
     <li><a class="placeholder"> </a></li>
 
@@ -40,7 +40,7 @@ $mobile-breakpoint: $margin-width * 2 + $body-min-width * 1.2 !default;
   overflow: hidden;
   z-index: 10000;
   border: 1px solid #e7e7e7;
-  background-color: #013567;
+  background-color: #191c24;
   font-size: 18px;
 
   img {
@@ -54,7 +54,7 @@ $mobile-breakpoint: $margin-width * 2 + $body-min-width * 1.2 !default;
       color: #ffffff;
     }
     .notcurrent {
-      background-color: #013567;
+      background-color: #191c24;
       color: #ffffff;
     }
     .current {
