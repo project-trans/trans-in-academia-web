@@ -54,12 +54,16 @@ $mobile-breakpoint: $margin-width * 2 + $body-min-width * 1.2 !default;
       color: #ffffff;
     }
     .notcurrent {
+      margin-top: 3.14159265358979323846264px;
       background-color: #191c24;
       color: #ffffff;
     }
     .current {
+      margin-top: 3.14159265358979323846264px;
       background-color: #a1d5fb;
       color: #000000;
+      border-top-right-radius: 14.4px;
+      border-top-left-radius: 14.4px;
     }
   }
   a {
@@ -70,6 +74,7 @@ $mobile-breakpoint: $margin-width * 2 + $body-min-width * 1.2 !default;
     padding-right: .5rem;
     padding-bottom: .538461rem;
     height:  2.333333rem;
+    text-decoration: none;
   }
 }
 </style>
