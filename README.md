@@ -1,5 +1,11 @@
 # trans-in-academia-web
 
+Change directory to the project root, then:
+
+```
+nix develop path:.
+```
+
 ## Project setup
 ```
 npm install
