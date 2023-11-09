@@ -1,0 +1,51 @@
+---
+Events:
+  2023 TDoR Craft Event in Toronto:
+    time: 2023-11-18T14:00:00-05:00
+    image: 2023TDOREvent.png
+    link:
+      name: register
+      url: https://linktr.ee/oneamongus
+    description: >
+      Join us on November 18, 2pm for our TDoR craft event.
+      We welcome all participants to create a special gift, offering, or memento for their loved one(s).
+      
+      This event will be available in English, Mandarin Chinese, Wu Chinese, and Japanese.
+
+      Location: 519 (519 Church St, Toronto)
+
+      Registration is mandatory for this event.
+      Please message us for any accommodation request.
+
+  "Bright, Hope, Dream: TiA! Academic and Life Abroad Workshop":
+    time: 2023-10-28T14:00:00+00:00
+    image: bhd-poster.jpg
+    past: yes
+    description: >
+      First Talk: Canada and Nordic Countries @ 2023-10-28 14:00 UTC
+
+      Join our Social Media for details.
+
+  "Reading Group: Lacanian Psychoanalysis for Activists":
+    image: lacan-reading.png
+    past: yes
+    description: >
+      Online from 2023-06-17 to 2023-08-10.
+
+  Reading Group of Deleuze's A Thousand Plateaus:
+    image: deleuze-reading.jpg
+    past: yes
+    description: >
+      Online from 2023-04-22.
+
+      First series of seminars ended. Second in preparation.
+
+  Livestream reading of Night of the Milky Way Railway:
+    image: miyazawa-poster.jpg
+    past: yes
+    link:
+      name: replay
+      url: "https://www.youtube.com/watch?v=TGhNTd-2I3c"
+    description: >
+      Livestream reading of Night of the Milky Way Railway on TDOV 2023, by One Among Us & Project Trans.
+      Replay is available on YouTube.

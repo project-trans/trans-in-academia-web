@@ -8,8 +8,9 @@
 
     <p> We are hiring editors! Please contact <a href="mailto:tia@oneamongus.ca">tia@oneamongus.ca</a>.</p>
   </header>
-
-  <EventsList/>
+  <events>
+    <EventsList/>
+  </events>
   </div>
 </template>
 
