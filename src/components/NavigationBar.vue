@@ -14,7 +14,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 // middle
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 768px) {
   div .content events {
     max-width: 75%;
     column-count: 2;
@@ -39,7 +39,7 @@
 }
 
 // big screens
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1279px) {
   div .content events {
     max-width: 75%;
     column-count: 3;
@@ -48,7 +48,7 @@
 
 
 // mobile
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 768px) {
   #app {
     flex-direction: column !important;
   }
