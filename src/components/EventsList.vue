@@ -1,41 +1,85 @@
 <script lang="jsx">
 import eventslist from '/public/events/events.yaml'
 
-
 export default {
-    render() {
-        var tmpl = [];
-        tmpl.push(<h2> Events </h2>);
-        // console.log(eventslist);
-        for (const event in eventslist.Events) {
-            // TODO: time, past or current events, accept markdown grammar
-            const image = typeof eventslist.Events[event].image != "undefined" ? "/events/" + eventslist.Events[event].image : "";
-            const description = typeof eventslist.Events[event].description != "undefined" ? eventslist.Events[event].description : "";
-            const link = typeof eventslist.Events[event].link != "undefined" ? eventslist.Events[event].link : {name : "nolink", url: "#"};
-            // console.log("image=" + image);
-            tmpl.push(
-                    <div class="event">
-                      <img src={image} alt={event} />
-                    <h3> {event} <span class={link.name}> <a href={link.url}> &gt; {link.name}</a> </span> </h3>
-                      <p> {description} </p>
-                    </div>);
-        }
-        // console.log(tmpl);
-        return tmpl;
-    },
+  render() {
+    var tmpl = [];
+    for (const event in eventslist.Events) {
+      // TODO: time, past or current events, accept markdown grammar
+      const image = typeof eventslist.Events[event].image != "undefined" ? "/events/assets/" + eventslist.Events[event].image : "";
+      const description = typeof eventslist.Events[event].description != "undefined" ? eventslist.Events[event].description : "";
+      const link = typeof eventslist.Events[event].link != "undefined" ? eventslist.Events[event].link : { type: undefined, url: "#" };
+      const lang = typeof eventslist.Events[event].lang != "undefined" ? eventslist.Events[event].lang : "English / Mandarian / Wu / Japanese";
+      console.log(!!link.type)
+      tmpl.push(
+        <div class="event" loading='lazy'>
+          <a href={link.url}>
+            <img src={image} alt={event} />
+          </a>
+          <div class="text-wrapper">
+            <h3> {event} </h3>
+            <p style="margin-top:0;color:#000000ba">
+              {lang}
+            </p>
+            <a style="color:black;margin:0" href={link.url}>
+              {link.type}
+            </a>
+            <p> {description} </p>
+          </div>
+        </div>);
+    }
+    return tmpl;
+  },
 };
 </script>
 
 <style lang="scss">
-events {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row: 3;
-}
 .nolink {
   display: none;
 }
-div .event {
-  padding-bottom: 3rem;
+
+div {
+  text-decoration: none;
+
+  .event {
+    margin: 3rem 0;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+
+    :hover {
+      transition: cubic-bezier(); //@TODO
+    }
+
+    img {
+      border-radius: 1rem 1rem 0 0;
+    }
+
+    .text-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      h4 {
+        width: fit-content;
+        border: 1px solid black;
+        border-radius: 5rem;
+        padding: 0 1rem 0.2rem 1rem;
+      }
+
+      p {
+        text-align: justify;
+        color: gray;
+        font-family: "Inter Tight"
+      }
+    }
+  }
 }
 </style>

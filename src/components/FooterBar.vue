@@ -18,6 +18,10 @@
 
 <style scoped lang="scss">
   .footer {
+    display: none;
+    position: fixed;
+    top: 88vh;
+    margin: 0 auto 0 auto;
     text-align: center;
     font-family: Comme, sans-serif;
     img {
