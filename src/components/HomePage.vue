@@ -25,16 +25,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-$margin-width: 16rem !default;
-$body-min-width: 20rem !default;
-$container-max-width: 70rem !default;
-$padding-content: 2rem !default;
-$mobile-breakpoint: $margin-width * 2 + $body-min-width * 1.2 !default;
 
 // middle
 @media screen and (min-width: 768px) {
   div .content events {
-    max-width: 75%;
+    width: 75%;
     column-count: 2;
   }
 }
@@ -42,7 +37,7 @@ $mobile-breakpoint: $margin-width * 2 + $body-min-width * 1.2 !default;
 // big screens
 @media screen and (min-width: 1279px) {
   div .content events {
-    max-width: 75%;
+    width: 95%;
     column-count: 3;
   }
 }
@@ -66,13 +61,6 @@ div .margin {
 }
 
 div .content {
-  // max-width: calc(min(#{$container-max-width}, 100%));
-  // padding: $padding-content;
-  // box-sizing: content-box;
-  // border-inline: 16px;
-  // margin-inline: auto;
-  // margin-block-start: 0;
-  // margin-block-end: 2rem;
   display: grid;
   padding: 3rem;
 
@@ -94,16 +82,16 @@ header {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.25rem;
   text-align: center;
 }
 
 p {
-  font-size: 1.25em;
+  font-size: 0.85rem;
 }
 
 img {
-  width: calc(min(#{$container-max-width}, 100%));
+  width: 100%;
   vertical-align: middle;
 }
 </style>

@@ -15,11 +15,6 @@
 <style lang="scss">
 // middle
 @media screen and (min-width: 768px) {
-  div .content events {
-    max-width: 75%;
-    column-count: 2;
-  }
-
   .nav {
     position: fixed;
     top: 0;
@@ -41,7 +36,6 @@
 // big screens
 @media screen and (min-width: 1279px) {
   div .content events {
-    max-width: 75%;
     column-count: 3;
   }
 }
@@ -68,7 +62,7 @@
 .nav {
 
   li:not(#logo) {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-left: 2rem;
     min-width: 10rem;
     border: 2px solid transparent;

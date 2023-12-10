@@ -62,16 +62,9 @@ div {
       margin: 1rem;
 
       h3 {
-        font-size: 1.5rem;
+        font-size: 0.95rem;
         margin-top: 0;
         margin-bottom: 0;
-      }
-
-      h4 {
-        width: fit-content;
-        border: 1px solid black;
-        border-radius: 5rem;
-        padding: 0 1rem 0.2rem 1rem;
       }
 
       p {
