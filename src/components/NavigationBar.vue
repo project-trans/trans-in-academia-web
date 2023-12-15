@@ -120,7 +120,7 @@ export default {
     left: 2.5rem;
     top: 3rem;
     margin: 0 !important;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,7 +140,7 @@ export default {
     background-color: white;
     right: 2.5rem;
     top: 3rem;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,7 +157,7 @@ export default {
     background-color: white;
     border-radius: 1.5rem;
     margin: 10rem 2.5rem;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.2);
 
     a {
       border: none;
