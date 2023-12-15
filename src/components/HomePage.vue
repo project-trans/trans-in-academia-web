@@ -65,8 +65,6 @@ div .content {
   padding: 3rem;
 
   events {
-    // margin: auto;
-    // column-count: 3;
     column-gap: 3rem;
 
     :first-child {

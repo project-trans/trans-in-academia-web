@@ -46,7 +46,7 @@ div {
     padding-bottom: 1rem;
     border-radius: 1rem;
     background-color: white;
-    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 
     :hover {
       transition: cubic-bezier(); //@TODO
@@ -68,7 +68,7 @@ div {
       }
 
       p {
-        text-align: justify;
+        text-align: left;
         color: gray;
         font-family: "Inter Tight"
       }
