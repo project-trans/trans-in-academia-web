@@ -1,35 +1,34 @@
+<template>
+  <div v-for="(item, name) in eventslist.Events" :key="name">
+    <div class="event" loading='lazy'>
+      <a :href="`${item.url}`">
+        <img :src="`events/assets/${item.image}`" :alt="`${name}`" />
+      </a>
+      <div class="text-wrapper">
+        <h3> {{ name }} </h3>
+        <p>
+          {{
+            item.lang
+            ? item.lang
+            : "English / Mandarian / Wu / Japanese"
+          }}
+        </p>
+        <a v-if="item.link && item.link.type" class="link-type" :href="`${item.url}`">
+          {{ item.link.type }}
+        </a>
+        <p> {{ item.description }} </p>
+      </div>
+    </div>
+  </div>
+</template>
+
 <script lang="jsx">
 import eventslist from '/public/events/events.yaml'
 
 export default {
-  render() {
-    var tmpl = [];
-    for (const event in eventslist.Events) {
-      // TODO: time, past or current events, accept markdown grammar
-      const image = typeof eventslist.Events[event].image != "undefined" ? "/events/assets/" + eventslist.Events[event].image : "";
-      const description = typeof eventslist.Events[event].description != "undefined" ? eventslist.Events[event].description : "";
-      const link = typeof eventslist.Events[event].link != "undefined" ? eventslist.Events[event].link : { type: undefined, url: "#" };
-      const lang = typeof eventslist.Events[event].lang != "undefined" ? eventslist.Events[event].lang : "English / Mandarian / Wu / Japanese";
-      console.log(!!link.type)
-      tmpl.push(
-        <div class="event" loading='lazy'>
-          <a href={link.url}>
-            <img src={image} alt={event} />
-          </a>
-          <div class="text-wrapper">
-            <h3> {event} </h3>
-            <p>
-              {lang}
-            </p>
-            <a class="link-type" href={link.url}>
-              {link.type}
-            </a>
-            <p> {description} </p>
-          </div>
-        </div>);
-    }
-    return tmpl;
-  },
+  setup() {
+    return { eventslist }
+  }
 };
 </script>
 
@@ -73,12 +72,12 @@ div {
         text-align: left;
         font-family: "Inter";
         margin-top: 0;
-        color: #000000ba;
+        color: #0000009a;
       }
 
       .link-type {
         color: black;
-        margin: 0;
+        margin: 0 0 1rem 0;
         border: 2px solid black;
         text-decoration: none;
         width: min-content;

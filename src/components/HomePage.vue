@@ -65,6 +65,7 @@ div .margin {
 
 div .content {
   display: grid;
+  grid-auto-flow: row;
   padding: 3rem;
 
   events {

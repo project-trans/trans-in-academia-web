@@ -22,7 +22,8 @@
     <div id="normal">
       <li><a href="#" class="current"><span>Events</span><span class="arrow">→</span></a></li>
       <li><a href="https://lib.oau.edu.kg" class="notcurrent"><span>Library</span><span class="arrow">→</span></a></li>
-      <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span><span class="arrow">→</span></a></li>
+      <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span><span class="arrow">→</span></a>
+      </li>
     </div>
   </div>
 </template>
@@ -175,19 +176,36 @@ button {
     margin-left: 2rem;
     min-width: 10rem;
 
+    :hover {
+      margin-bottom: 0.5rem;
+
+      .arrow {
+        color: black;
+      }
+    }
+
     a {
+      transition: all 0.5s ease-in-out;
       display: flex;
       align-items: center;
-      justify-content: space-between;
       padding: 0.5rem 2rem;
       min-width: 10rem;
-      height: 2.33rem;
       text-decoration: none;
+      display: flex;
+      align-items: start;
+
+      .arrow {
+        margin: 0 5px;
+      }
     }
 
     .notcurrent {
       border: none;
       color: rgba(0, 0, 0, 0.3);
+
+      .arrow {
+        color: transparent;
+      }
 
       :hover {
         color: black;
