@@ -1,14 +1,18 @@
 <template>
   <div class="margin"></div>
   <div class="content">
-    <!-- <header>
-    <img class="banner" alt="Trans in Academia Logo" src="/TIA_BannerL@2x.png">
-    <h3> <center><a href="https://t.me/transacademicorg">Telegram</a> | <a href="https://discord.gg/A3exRdrEDp">Discord</a> | <a rel="me" href="https://kazv.moe/users/tia">Fediverse</a> </center></h3>
-    <p> We are an association for diasporic East Asian and Canadian scholars, students and enthusiasts.</p>
-
-    <p> We are hiring editors! Please contact <a href="mailto:tia@oneamongus.ca">tia@oneamongus.ca</a>.</p>
-  </header> -->
     <events>
+      <div class="event">
+        <div class="text-wrapper">
+          <h3 style="
+            margin: 2rem 0;
+            font-size: 0.75rem;
+            color: gray;
+          ">pinned</h3>
+          <p> We are an association for diasporic East Asian and Canadian scholars, students and enthusiasts.</p>
+          <p> We are hiring editors! Please contact <a style="color: unset;" href="mailto:tia@oneamongus.ca">tia@oneamongus.ca</a>.</p>
+        </div>
+      </div>
       <EventsList />
     </events>
   </div>
@@ -25,7 +29,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-
 // middle
 @media screen and (min-width: 768px) {
   div .content events {

@@ -18,10 +18,10 @@ export default {
           </a>
           <div class="text-wrapper">
             <h3> {event} </h3>
-            <p style="margin-top:0;color:#000000ba">
+            <p>
               {lang}
             </p>
-            <a style="color:black;margin:0" href={link.url}>
+            <a class="link-type" href={link.url}>
               {link.type}
             </a>
             <p> {description} </p>
@@ -62,15 +62,28 @@ div {
       margin: 1rem;
 
       h3 {
-        font-size: 0.95rem;
+        font-size: 1.5rem;
         margin-top: 0;
         margin-bottom: 0;
+        font-family: "Inter Tight";
+        font-weight: 500;
       }
 
       p {
         text-align: left;
-        color: gray;
-        font-family: "Inter Tight"
+        font-family: "Inter";
+        margin-top: 0;
+        color: #000000ba;
+      }
+
+      .link-type {
+        color: black;
+        margin: 0;
+        border: 2px solid black;
+        text-decoration: none;
+        width: min-content;
+        border-radius: 2rem;
+        padding: 0.05rem 0.5rem;
       }
     }
   }

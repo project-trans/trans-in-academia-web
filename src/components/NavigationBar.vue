@@ -1,34 +1,34 @@
 <template>
   <div class="nav">
     <div id="logo">
-      <img src="/LOGO.png">
+      <img src="/TiA_LogoL Banner.png">
     </div>
-    <div id="logo_burger">
-      <img src="/LOGO_clip.png">
-    </div>
+    <Transition id="logo_burger">
+      <img src='/logo_clip.svg'>
+    </Transition>
     <button id="burger" @click="unfold">
-      <img src="/burger.svg">
+      <img :src="`${burgerStatus ? '/burger_close.svg' : '/burger.svg'}`">
     </button>
     <Transition>
       <div id="burger-items" v-show="burgerStatus">
         <li><a href="#"><span>Events</span></a></li>
-        <li><a href="https://lib.oau.edu.kg"><span>Librar</span>y</a></li>
-        <li><a href="https://uniguide.oau.edu.kg"><span>UniGui</span>de</a></li>
+        <li><a href="https://lib.oau.edu.kg"><span>Library</span></a></li>
+        <li><a href="https://uniguide.oau.edu.kg"><span>UniGuide</span></a></li>
       </div>
     </Transition>
     <Transition>
       <div id="mask" v-show="burgerStatus" />
     </Transition>
     <div id="normal">
-      <li><a href="#" class="current"><span>Events</span></a></li>
-      <li><a href="https://lib.oau.edu.kg" class="notcurrent"><span>Librar</span>y</a></li>
-      <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGui</span>de</a></li>
+      <li><a href="#" class="current"><span>Events</span><span class="arrow">→</span></a></li>
+      <li><a href="https://lib.oau.edu.kg" class="notcurrent"><span>Library</span><span class="arrow">→</span></a></li>
+      <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span><span class="arrow">→</span></a></li>
     </div>
   </div>
 </template>
 
 <script>
-import { ref } from 'vue'
+import { Transition, ref } from 'vue'
 const burgerStatus = ref(false)
 const unfold = () => {
   burgerStatus.value = !burgerStatus.value;
@@ -36,11 +36,12 @@ const unfold = () => {
 export default {
   name: "NavigationBar",
   setup() {
-    return { burgerStatus }
+    return { burgerStatus };
   },
   methods: {
-    unfold
-  }
+    unfold,
+  },
+  components: { Transition }
 }
 </script>
 
@@ -120,16 +121,10 @@ export default {
     left: 2.5rem;
     top: 3rem;
     margin: 0 !important;
-    box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 32px 48px -4px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
-
-    img {
-      height: 80%;
-      width: auto;
-    }
-
   }
 
   #burger {
@@ -140,14 +135,10 @@ export default {
     background-color: white;
     right: 2.5rem;
     top: 3rem;
-    box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 32px 48px -4px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
-
-    img {
-      width: 60%;
-    }
   }
 
   #burger-items {
@@ -157,7 +148,7 @@ export default {
     background-color: white;
     border-radius: 1.5rem;
     margin: 10rem 2.5rem;
-    box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 32px 48px -4px rgba(0, 0, 0, 0.2);
 
     a {
       border: none;
@@ -183,11 +174,11 @@ button {
     font-size: 1rem;
     margin-left: 2rem;
     min-width: 10rem;
-    border: 2px solid transparent;
 
     a {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       padding: 0.5rem 2rem;
       min-width: 10rem;
       height: 2.33rem;
@@ -200,12 +191,11 @@ button {
 
       :hover {
         color: black;
+        font-weight: 500;
       }
     }
 
     .current {
-      border: 3px solid black;
-      border-radius: 2.33rem;
       color: black;
     }
   }
@@ -223,7 +213,7 @@ button {
 
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 0.5s ease;
+  transition: opacity 0.75s ease;
 }
 
 .v-enter-from,
