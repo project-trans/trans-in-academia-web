@@ -3,7 +3,7 @@
 <div class="content">
   <header>
     <img class="banner" alt="Trans in Academia Logo" src="/TIA_BannerL@2x.png">
-    <h3> <center><a href="https://t.me/transacademicorg">Telegram</a> | <a href="https://discord.gg/A3exRdrEDp">Discord</a> | <a rel="me" href="https://kazv.moe/users/tia">Fediverse</a> </center></h3>
+    <h3> <center><a href="https://t.me/transacademicorg">Telegram</a> | <a href="https://discord.gg/A3exRdrEDp">Discord</a> | <a rel="me" href="https://kazv.moe/users/tia">Fediverse</a> | <a href="https://x.com/transinacademia">X (Formerly Twitter)</a> </center></h3>
     <p> We are an association for diasporic East Asian and Canadian scholars, students and enthusiasts.</p>
 
     <p> We are hiring editors! Please contact <a href="mailto:tia@oneamongus.ca">tia@oneamongus.ca</a>.</p>
