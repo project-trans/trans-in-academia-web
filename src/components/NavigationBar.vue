@@ -22,8 +22,7 @@
     <div id="normal">
       <li><a href="#" class="current"><span>Events</span><span class="arrow">→</span></a></li>
       <li><a href="https://lib.oau.edu.kg" class="notcurrent"><span>Library</span><span class="arrow">→</span></a></li>
-      <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span><span class="arrow">→</span></a>
-      </li>
+      <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span><span class="arrow">→</span></a></li>
     </div>
   </div>
 </template>
@@ -111,6 +110,7 @@ export default {
 
   #logo {
     display: none;
+    padding-left: 0.5rem;
   }
 
   #logo_burger {
@@ -200,7 +200,6 @@ button {
     }
 
     .notcurrent {
-      border: none;
       color: rgba(0, 0, 0, 0.3);
 
       .arrow {
