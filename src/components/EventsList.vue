@@ -46,6 +46,7 @@ div {
     border-radius: 1rem;
     background-color: white;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    break-inside: avoid;
 
     :hover {
       transition: cubic-bezier(); //@TODO
