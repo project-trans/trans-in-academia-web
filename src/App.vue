@@ -52,4 +52,9 @@ bg {
 body {
   margin: 0px;
 }
+
+@font-face {
+    font-family: Sarasa-Gothic-Regular;
+    src: url('assets/fonts/SarasaGothicSC-Regular.ttf');
+}
 </style>
