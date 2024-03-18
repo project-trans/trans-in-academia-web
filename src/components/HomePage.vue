@@ -121,19 +121,22 @@ div .content {
       a {
         text-decoration: none;
         color: gray;
+        width: 25%;
       }
 
       // flex-wrap: nowrap;
       a div {
         display: flex;
         flex-direction: column;
+        justify-content: center;
 
         div {
           font-size: 0.75rem;
+          text-align: center;
         }
 
         img {
-          height: 4rem;
+          width: 90%;
         }
       }
     }

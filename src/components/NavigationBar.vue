@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <div id="logo">
-      <img src="/TiA_LogoL Banner.png">
+      <img src="/TIA_LOGO_L_Oneline.svg">
     </div>
     <Transition id="logo_burger">
       <img src='/logo_clip.svg'>
@@ -20,9 +20,11 @@
       <div id="mask" v-show="burgerStatus" />
     </Transition>
     <div id="normal">
-      <li><a href="#" class="current"><img src="/TiA_LogoL Banner.png"></a></li>
-      <li><a href="https://lib.oau.edu.kg" class="notcurrent"><span>资料库</span></a></li>
-      <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span></a></li>
+      <div>
+        <li><a href="#" class="current"><img src="/TIA_LOGO_L_Oneline.svg"></a></li>
+        <li><a href="https://lib.oau.edu.kg" class="notcurrent"><span>资料库</span></a></li>
+        <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span></a></li>
+      </div>
     </div>
   </div>
 </template>
@@ -65,35 +67,44 @@ export default {
 .nav {
   display: flex;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: white;
+  opacity: 0.8;
 
   div#normal {
-    display: flex;
-    align-items: center;
 
-    li {
-      margin: auto 3rem;
-      list-style: none;
+    div {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 40rem;
+      justify-content: space-between;
+      margin-left: 3rem;
 
-      a {
-        text-decoration: none;
-        color: gray;
+      li {
+        // margin: auto 3rem;
+        list-style: none;
 
-        // height: 3rem;
-        // // display: block;
-        span {
-          text-wrap: nowrap;
-          // margin: 1rem;
-          // height: 1rem;
+        a {
+          text-decoration: none;
+          color: gray;
+
+          // height: 3rem;
+          // // display: block;
+          span {
+            text-wrap: nowrap;
+            // margin: 1rem;
+            // height: 1rem;
+          }
         }
-      }
 
-      a img {
-        height: 2rem;
-        margin-top: 5px;
-      }
+        a img {
+          height: 2rem;
+          margin-top: 5px;
+        }
 
+      }
     }
+
   }
 }
 

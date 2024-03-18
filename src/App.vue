@@ -36,16 +36,7 @@ bg {
   position: fixed;
   height: 100vh;
   width: 100%;
-
-  background-image: radial-gradient(circle at 10% 0%,
-      #e3dbe766 0,
-      #FCEDF066 20%,
-      #FEE2E766 30%,
-      #CCC8DF66 50%,
-      #C2CFE666 64%,
-      #D1E0ED66 80%,
-      #DEE0E766 100%);
-  filter: blur(10px);
+  background-color: #F1F5F9;
 }
 
 body {
