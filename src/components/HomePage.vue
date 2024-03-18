@@ -2,22 +2,22 @@
   <div class="margin"></div>
   <div class="content">
     <events>
-      <div class="event">
-        <div class="text-wrapper">
+      <div class="event" style="padding-bottom: 0;">
+        <div class="text-wrapper" style="margin-bottom: 0;">
           <h3 style="
-            margin: 2rem 0;
+            margin: 1rem 0;
             font-size: 0.75rem;
             color: gray;
           ">Pinned</h3>
-          <p> We are an association for diasporic East Asian and Canadian scholars, students and enthusiasts.</p>
-          <p> We are hiring editors! Please contact <a style="color: unset;"
-              href="mailto:tia@oneamongus.ca">tia@oneamongus.ca</a>.</p>
+          <p style="color: black;">A community for diasporic Chinese trans and gender nonconforming people pursuing
+            academic and career goals. </p>
+          <p style="color: black;">分享与跨性别有关的学术动态，帮助跨性别者及友跨人士求学、进修、工作，以跨性别学术人的视角发声。</p>
         </div>
       </div>
       <div class="event social">
         <div class="text-wrapper">
           <h3 style="
-            margin: 2rem 0;
+            margin: 1rem 0;
             font-size: 0.75rem;
             color: gray;
           ">社交媒体</h3>
