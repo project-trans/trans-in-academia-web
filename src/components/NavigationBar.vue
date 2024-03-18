@@ -63,6 +63,15 @@ export default {
   // width: auto;
 }
 
+// // mobile
+@media screen and (max-width: 768px) {
+  .nav {
+    div#normal {
+      max-width: 100% !important;
+    }
+  }
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -70,8 +79,6 @@ export default {
   opacity: 0.8;
 
   div#normal {
-
-
     display: flex;
     align-items: center;
     width: 100%;

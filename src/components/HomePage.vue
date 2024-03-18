@@ -95,6 +95,21 @@ export default {
   .placeholder {
     display: none;
   }
+
+  .social .text-wrapper div {
+
+    // flex-wrap: nowrap;
+    a div {
+
+      div {
+        width: 70% !important;
+      }
+
+      img {
+        width: 70% !important;
+      }
+    }
+  }
 }
 
 div .margin {
@@ -134,10 +149,12 @@ div .content {
           font-size: 0.75rem;
           text-align: center;
           width: 90%;
+          margin: auto;
         }
 
         img {
           width: 90%;
+          margin: auto;
         }
       }
     }
