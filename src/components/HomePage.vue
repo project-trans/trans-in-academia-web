@@ -106,7 +106,7 @@ div .content {
     .placeholder {
       background-color: transparent;
       box-shadow: none;
-      height: 15rem;
+      height: 20rem;
     }
 
     .social .text-wrapper div {
@@ -129,7 +129,7 @@ div .content {
         }
 
         img {
-          height: 2rem;
+          height: 4rem;
         }
       }
     }
