@@ -81,7 +81,8 @@ export default {
 
         // height: 3rem;
         // // display: block;
-        div {
+        span {
+          text-wrap: nowrap;
           // margin: 1rem;
           // height: 1rem;
         }

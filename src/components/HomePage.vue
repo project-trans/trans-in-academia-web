@@ -33,7 +33,7 @@
               </div>
             </a>
             <a href="https://www.instagram.com/oneamongus/">
-              <div><img src="social/fedi.svg" />
+              <div><img src="social/fed.png" />
                 <div>Fediverse</div>
               </div>
             </a>
@@ -90,6 +90,10 @@ export default {
   div .margin {
     min-width: unset !important;
     width: 0;
+  }
+
+  .placeholder {
+    display: none;
   }
 }
 
