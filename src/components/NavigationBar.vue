@@ -102,7 +102,7 @@ export default {
         // height: 3rem;
         // // display: block;
         span {
-          text-wrap: nowrap;
+          text-wrap: nowrap !important;
           height: fit-content;
           margin: auto;
           // margin: 1rem;
