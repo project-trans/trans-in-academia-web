@@ -22,7 +22,7 @@
     <div id="normal">
       <div>
         <li><a href="#" class="current"><img src="/LOGO Graph.svg"><span>Trans in Academia!</span></a></li>
-        <li><a href="https://lib.oau.edu.kg" class="notcurrent"><span>资料库</span></a></li>
+        <li><a href="https://lib.oau.edu.kg" class="notcurrent"><span>Library</span></a></li>
         <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span></a></li>
       </div>
     </div>
