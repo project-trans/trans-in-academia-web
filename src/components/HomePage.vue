@@ -10,8 +10,42 @@
             color: gray;
           ">pinned</h3>
           <p> We are an association for diasporic East Asian and Canadian scholars, students and enthusiasts.</p>
-          <p> We are hiring editors! Please contact <a style="color: unset;" href="mailto:tia@oneamongus.ca">tia@oneamongus.ca</a>.</p>
+          <p> We are hiring editors! Please contact <a style="color: unset;"
+              href="mailto:tia@oneamongus.ca">tia@oneamongus.ca</a>.</p>
         </div>
+      </div>
+      <div class="event social">
+        <div class="text-wrapper">
+          <h3 style="
+            margin: 2rem 0;
+            font-size: 0.75rem;
+            color: gray;
+          ">社交媒体</h3>
+          <div>
+            <a href="https://www.instagram.com/oneamongus/">
+              <div><img src="social/tg.svg" />
+                <div>Telegram</div>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/oneamongus/">
+              <div><img src="social/dis.svg" />
+                <div>Discord</div>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/oneamongus/">
+              <div><img src="social/fedi.svg" />
+                <div>Fediverse</div>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/oneamongus/">
+              <div><img src="social/tw.svg" />
+                <div>Twitter</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="event placeholder">
       </div>
       <EventsList />
     </events>
@@ -41,7 +75,7 @@ export default {
 @media screen and (min-width: 1279px) {
   div .content events {
     width: 95%;
-    column-count: 3;
+    column-count: 4;
   }
 }
 
@@ -69,6 +103,37 @@ div .content {
   padding: 3rem;
 
   events {
+    .placeholder {
+      background-color: transparent;
+      box-shadow: none;
+      height: 15rem;
+    }
+
+    .social .text-wrapper div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        color: gray;
+      }
+
+      // flex-wrap: nowrap;
+      a div {
+        display: flex;
+        flex-direction: column;
+
+        div {
+          font-size: 0.75rem;
+        }
+
+        img {
+          height: 2rem;
+        }
+      }
+    }
+
     column-gap: 3rem;
 
     :first-child {

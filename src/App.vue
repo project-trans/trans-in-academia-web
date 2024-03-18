@@ -23,13 +23,12 @@ export default {
 </script>
 
 <style lang="scss">
-
 #app {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Sarasa-Gothic-Regular', 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 bg {
@@ -54,7 +53,7 @@ body {
 }
 
 @font-face {
-    font-family: Sarasa-Gothic-Regular;
-    src: url('assets/fonts/SarasaGothicSC-Regular.ttf');
+  font-family: Sarasa-Gothic-Regular;
+  src: url('assets/fonts/SarasaGothicSC-Regular.ttf');
 }
 </style>
