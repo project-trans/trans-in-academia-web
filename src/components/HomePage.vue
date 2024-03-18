@@ -150,6 +150,7 @@ div .content {
           text-align: center;
           width: 90%;
           margin: auto;
+          margin-top: 0.5rem;
         }
 
         img {
