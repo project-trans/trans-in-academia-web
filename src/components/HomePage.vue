@@ -22,22 +22,22 @@
             color: gray;
           ">社交媒体</h3>
           <div>
-            <a href="https://www.instagram.com/oneamongus/">
+            <a href="https://t.me/transacademicorg">
               <div><img src="social/tg.svg" />
                 <div>Telegram</div>
               </div>
             </a>
-            <a href="https://www.instagram.com/oneamongus/">
+            <a href="https://discord.gg/A3exRdrEDp">
               <div><img src="social/dis.svg" />
                 <div>Discord</div>
               </div>
             </a>
-            <a href="https://www.instagram.com/oneamongus/">
+            <a href="https://kazv.moe/users/tia">
               <div><img src="social/fed.png" />
                 <div>Fediverse</div>
               </div>
             </a>
-            <a href="https://www.instagram.com/oneamongus/">
+            <a href="https://x.com/transinacademia">
               <div><img src="social/tw.svg" />
                 <div>Twitter</div>
               </div>

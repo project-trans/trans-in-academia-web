@@ -21,7 +21,7 @@
     </Transition>
     <div id="normal">
       <div>
-        <li><a href="#" class="current"><img src="/TIA_LOGO_L_Oneline.svg"></a></li>
+        <li><a href="#" class="current"><img src="/LOGO Graph.svg"><span>Trans in Academia!</span></a></li>
         <li><a href="https://lib.oau.edu.kg" class="notcurrent"><span>资料库</span></a></li>
         <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span></a></li>
       </div>
@@ -85,6 +85,8 @@ export default {
         list-style: none;
 
         a {
+          display: flex;
+          justify-content: center;
           text-decoration: none;
           color: gray;
 
@@ -92,6 +94,8 @@ export default {
           // // display: block;
           span {
             text-wrap: nowrap;
+            height: fit-content;
+            margin: auto;
             // margin: 1rem;
             // height: 1rem;
           }
@@ -100,6 +104,11 @@ export default {
         a img {
           height: 2rem;
           margin-top: 5px;
+          margin-right: 5px;
+        }
+
+        a.current {
+          color: black;
         }
 
       }
