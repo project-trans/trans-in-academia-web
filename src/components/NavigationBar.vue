@@ -20,11 +20,10 @@
       <div id="mask" v-show="burgerStatus" />
     </Transition>
     <div id="normal">
-      <div>
-        <li><a href="#" class="current"><img src="/LOGO Graph.svg"><span>Trans in Academia!</span></a></li>
-        <li><a href="https://lib.oau.edu.kg" class="notcurrent"><span>Library</span></a></li>
-        <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span></a></li>
-      </div>
+      <li><a href="#" class="current"><img src="/LOGO Graph.svg"><span>Trans in Academia!</span></a></li>
+      <li><a href="https://lib.oau.edu.kg" class="notcurrent"><span>Library</span></a></li>
+      <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span></a></li>
+      <!-- <li class="placeholder"></li> -->
     </div>
   </div>
 </template>
@@ -72,50 +71,51 @@ export default {
 
   div#normal {
 
-    div {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      max-width: 40rem;
-      justify-content: space-between;
-      margin-left: 3rem;
 
-      li {
-        // margin: auto 3rem;
-        list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 28rem;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
 
-        a {
-          display: flex;
-          justify-content: center;
-          text-decoration: none;
-          color: gray;
+    li.placeholder {}
 
-          // height: 3rem;
-          // // display: block;
-          span {
-            text-wrap: nowrap;
-            height: fit-content;
-            margin: auto;
-            // margin: 1rem;
-            // height: 1rem;
-          }
+    li {
+      // margin: auto 3rem;
+      list-style: none;
+
+      a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: gray;
+
+        // height: 3rem;
+        // // display: block;
+        span {
+          text-wrap: nowrap;
+          height: fit-content;
+          margin: auto;
+          // margin: 1rem;
+          // height: 1rem;
         }
-
-        a img {
-          height: 2rem;
-          margin-top: 5px;
-          margin-bottom: 5px;
-          margin-right: 5px;
-        }
-
-        a.current {
-          color: black;
-          font-family: Sarasa-Gothic-SemiBold;
-        }
-
       }
-    }
 
+      a img {
+        height: 2rem;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+      }
+
+      a.current {
+        color: black;
+        font-family: Sarasa-Gothic-SemiBold;
+      }
+
+    }
   }
 }
 

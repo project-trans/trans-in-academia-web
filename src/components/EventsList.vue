@@ -41,7 +41,7 @@ div {
   text-decoration: none;
 
   .event {
-    margin: 3rem 0;
+    margin: 2rem 0;
     padding-bottom: 1rem;
     border-radius: 1rem;
     background-color: white;

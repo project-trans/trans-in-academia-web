@@ -8,7 +8,7 @@
             margin: 2rem 0;
             font-size: 0.75rem;
             color: gray;
-          ">pinned</h3>
+          ">Pinned</h3>
           <p> We are an association for diasporic East Asian and Canadian scholars, students and enthusiasts.</p>
           <p> We are hiring editors! Please contact <a style="color: unset;"
               href="mailto:tia@oneamongus.ca">tia@oneamongus.ca</a>.</p>
@@ -104,7 +104,7 @@ div .margin {
 div .content {
   display: grid;
   grid-auto-flow: row;
-  padding: 3rem;
+  padding: 2rem;
 
   events {
     .placeholder {
@@ -133,6 +133,7 @@ div .content {
         div {
           font-size: 0.75rem;
           text-align: center;
+          width: 90%;
         }
 
         img {
@@ -141,7 +142,7 @@ div .content {
       }
     }
 
-    column-gap: 3rem;
+    column-gap: 2rem;
 
     :first-child {
       margin-top: 0;
