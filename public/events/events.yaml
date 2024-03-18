@@ -4,12 +4,12 @@ Events:
     time: 2023-11-18T14:00:00-05:00
     image: 2023TDOREvent.png
     link:
-      name: register
+      type: register
       url: https://linktr.ee/oneamongus
     description: >
       Join us on November 18, 2pm for our TDoR craft event.
       We welcome all participants to create a special gift, offering, or memento for their loved one(s).
-      
+
       This event will be available in English, Mandarin Chinese, Wu Chinese, and Japanese.
 
       Location: 519 (519 Church St, Toronto)
@@ -19,8 +19,8 @@ Events:
 
   Ruins of Memorial:
     image: ruins-of-memorial.png
-    link: 
-      name: register
+    link:
+      type: register
       url: https://linktr.ee/oneamongus
 
   "Bright, Hope, Dream: TiA! Academic and Life Abroad Workshop":
@@ -50,7 +50,7 @@ Events:
     image: miyazawa-poster.jpg
     past: yes
     link:
-      name: replay
+      type: replay
       url: "https://www.youtube.com/watch?v=TGhNTd-2I3c"
     description: >
       Livestream reading of Night of the Milky Way Railway on TDOV 2023, by One Among Us & Project Trans.

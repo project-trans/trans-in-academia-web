@@ -1,13 +1,16 @@
 <template>
-  <NavigationBar/>
-  <HomePage/>
-  <FooterBar/>
+  <bg />
+  <NavigationBar />
+  <HomePage />
+  <FooterBar />
 </template>
 
 <script>
 import HomePage from './components/HomePage.vue'
 import NavigationBar from './components/NavigationBar.vue'
 import FooterBar from './components/FooterBar.vue'
+import "@fontsource/inter";
+import "@fontsource/inter-tight";
 
 export default {
   name: 'App',
@@ -20,20 +23,33 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Comme:wght@200&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Junge&family=Tangerine:wght@700&display=swap');
-
-$bg: #d9f0fe !default;
-$color: hsl(219deg, 30%, 20%) !default;
-
 #app {
-  font-family: 'eb garamond', serif;
+  font-family: 'Sarasa-Gothic-Regular', 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  background-color: $bg;
-  color: $color;
+  display: flex;
+  flex-direction: column;
 }
+
+bg {
+  z-index: -1;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: #F1F5F9;
+}
+
 body {
   margin: 0px;
+}
+
+@font-face {
+  font-family: Sarasa-Gothic-Regular;
+  src: url('assets/fonts/SarasaGothicSC-Regular.ttf');
+}
+
+@font-face {
+  font-family: Sarasa-Gothic-SemiBold;
+  src: url('assets/fonts/SarasaGothicSC-SemiBold.ttf');
 }
 </style>

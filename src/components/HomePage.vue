@@ -1,16 +1,54 @@
 <template>
-<div class="margin"></div>
-<div class="content">
-  <header>
-    <img class="banner" alt="Trans in Academia Logo" src="/TIA_BannerL@2x.png">
-    <h3> <center><a href="https://t.me/transacademicorg">Telegram</a> | <a href="https://discord.gg/A3exRdrEDp">Discord</a> | <a rel="me" href="https://kazv.moe/users/tia">Fediverse</a> | <a href="https://x.com/transinacademia">X (Formerly Twitter)</a> </center></h3>
-    <p> We are an association for diasporic East Asian and Canadian scholars, students and enthusiasts.</p>
-
-    <p> We are hiring editors! Please contact <a href="mailto:tia@oneamongus.ca">tia@oneamongus.ca</a>.</p>
-  </header>
-  <events>
-    <EventsList/>
-  </events>
+  <div class="margin"></div>
+  <div class="content">
+    <events>
+      <div class="event" style="padding-bottom: 0;">
+        <div class="text-wrapper" style="margin-bottom: 0;">
+          <h3 style="
+            margin: 1rem 0;
+            font-size: 0.75rem;
+            color: gray;
+          ">Pinned</h3>
+          <p style="color: black;">A community for diasporic Chinese trans and gender nonconforming people pursuing
+            academic and career goals. </p>
+          <p style="color: black;">分享与跨性别有关的学术动态，帮助跨性别者及友跨人士求学、进修、工作，以跨性别学术人的视角发声。</p>
+        </div>
+      </div>
+      <div class="event social">
+        <div class="text-wrapper">
+          <h3 style="
+            margin: 1rem 0;
+            font-size: 0.75rem;
+            color: gray;
+          ">社交媒体</h3>
+          <div>
+            <a href="https://t.me/transacademicorg">
+              <div><img src="social/tg.svg" />
+                <div>Telegram</div>
+              </div>
+            </a>
+            <a href="https://discord.gg/A3exRdrEDp">
+              <div><img src="social/dis.svg" />
+                <div>Discord</div>
+              </div>
+            </a>
+            <a href="https://kazv.moe/users/tia">
+              <div><img src="social/fed.png" />
+                <div>Fediverse</div>
+              </div>
+            </a>
+            <a href="https://x.com/transinacademia">
+              <div><img src="social/tw.svg" />
+                <div>Twitter</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="event placeholder">
+      </div>
+      <EventsList />
+    </events>
   </div>
 </template>
 
@@ -25,49 +63,128 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-$margin-width: 16rem !default;
-$body-min-width: 20rem !default;
-$container-max-width: 40rem !default;
-$padding-content: 2rem !default;
-$mobile-breakpoint: $margin-width * 2 + $body-min-width * 1.2 !default;
+// middle
+@media screen and (min-width: 768px) {
+  div .content events {
+    width: 75%;
+    column-count: 2;
+  }
+}
+
+// big screens
+@media screen and (min-width: 1279px) {
+  div .content events {
+    width: 95%;
+    column-count: 4;
+  }
+}
+
 
 // mobile
-@media screen and (max-width: $mobile-breakpoint){
+@media screen and (max-width: 768px) {
+  div .content events {
+    column-count: 1;
+    margin: auto;
+  }
 
-}
-// big screens
-@media screen and (min-width: $container-max-width) {
-    div .content {
-        padding-left: calc(100% - $container-max-width);
-	padding-right: calc(100% - $container-max-width);
+  div .margin {
+    min-width: unset !important;
+    width: 0;
+  }
+
+  .placeholder {
+    display: none;
+  }
+
+  .social .text-wrapper div {
+
+    // flex-wrap: nowrap;
+    a div {
+
+      div {
+        width: 70% !important;
+      }
+
+      img {
+        width: 70% !important;
+      }
     }
+  }
 }
+
+div .margin {
+  min-width: calc(min(20rem, 20%));
+}
+
 div .content {
-    max-width: calc(min(#{$container-max-width}, 100%));
-    padding: $padding-content;
-    box-sizing: content-box;
-    border-inline: 16px;
-    margin-inline: auto;
-    margin-block-start: 0;
-    margin-block-end: 2rem;
-    display: grid;
+  display: grid;
+  grid-auto-flow: row;
+  padding: 2rem;
+
+  events {
+    .placeholder {
+      background-color: transparent;
+      box-shadow: none;
+      height: 20rem;
+    }
+
+    .social .text-wrapper div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        color: gray;
+        width: 25%;
+      }
+
+      // flex-wrap: nowrap;
+      a div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        div {
+          font-size: 0.75rem;
+          text-align: center;
+          width: 90%;
+          margin: auto;
+          margin-top: 0.5rem;
+        }
+
+        img {
+          width: 90%;
+          margin: auto;
+        }
+      }
+    }
+
+    column-gap: 2rem;
+
+    :first-child {
+      margin-top: 0;
+    }
+  }
 }
 
 header {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: 2;
 }
+
 h2 {
-    font-size: 2em;
-    text-align: center;
+  font-size: 1.25rem;
+  text-align: center;
 }
+
 p {
-    font-size: 1.2em;
+  font-size: 0.85rem;
 }
 
 img {
-    width: calc(min(#{$container-max-width}, 100%));
-    vertical-align: middle;
+  width: 100%;
+  vertical-align: middle;
 }
 </style>
