@@ -47,4 +47,9 @@ body {
   font-family: Sarasa-Gothic-Regular;
   src: url('assets/fonts/SarasaGothicSC-Regular.ttf');
 }
+
+@font-face {
+  font-family: Sarasa-Gothic-SemiBold;
+  src: url('assets/fonts/SarasaGothicSC-SemiBold.ttf');
+}
 </style>

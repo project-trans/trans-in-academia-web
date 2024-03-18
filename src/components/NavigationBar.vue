@@ -104,11 +104,13 @@ export default {
         a img {
           height: 2rem;
           margin-top: 5px;
+          margin-bottom: 5px;
           margin-right: 5px;
         }
 
         a.current {
           color: black;
+          font-family: Sarasa-Gothic-SemiBold;
         }
 
       }
