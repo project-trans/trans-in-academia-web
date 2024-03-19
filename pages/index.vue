@@ -1,7 +1,7 @@
 <template>
   <div class="margin"></div>
   <div class="content">
-    <events>
+    <div class="events">
       <div class="event" style="padding-bottom: 0;">
         <div class="text-wrapper" style="margin-bottom: 0;">
           <h3 style="
@@ -23,22 +23,22 @@
           ">社交媒体</h3>
           <div>
             <a href="https://t.me/transacademicorg">
-              <div><img src="social/tg.svg" />
+              <div><img src="/social/tg.svg" />
                 <div>Telegram</div>
               </div>
             </a>
             <a href="https://discord.gg/A3exRdrEDp">
-              <div><img src="social/dis.svg" />
+              <div><img src="/social/dis.svg" />
                 <div>Discord</div>
               </div>
             </a>
             <a href="https://kazv.moe/users/tia">
-              <div><img src="social/fed.png" />
+              <div><img src="/social/fed.png" />
                 <div>Fediverse</div>
               </div>
             </a>
             <a href="https://x.com/transinacademia">
-              <div><img src="social/tw.svg" />
+              <div><img src="/social/tw.svg" />
                 <div>Twitter</div>
               </div>
             </a>
@@ -48,24 +48,18 @@
       <div class="event placeholder">
       </div>
       <EventsList />
-    </events>
+    </div>
   </div>
 </template>
 
 <script>
-import EventsList from './EventsList.vue'
-export default {
-  components: {
-    EventsList
-  }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 // middle
 @media screen and (min-width: 768px) {
-  div .content events {
+  div .content .events {
     width: 75%;
     column-count: 2;
   }
@@ -73,7 +67,7 @@ export default {
 
 // big screens
 @media screen and (min-width: 1279px) {
-  div .content events {
+  div .content .events {
     width: 95%;
     column-count: 4;
   }
@@ -82,7 +76,7 @@ export default {
 
 // mobile
 @media screen and (max-width: 768px) {
-  div .content events {
+  div .content .events {
     column-count: 1;
     margin: auto;
   }
@@ -121,7 +115,7 @@ div .content {
   grid-auto-flow: row;
   padding: 2rem;
 
-  events {
+  .events {
     .placeholder {
       background-color: transparent;
       box-shadow: none;

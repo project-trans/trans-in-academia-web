@@ -1,35 +1,29 @@
 <template>
   <div v-for="(item, name) in eventslist.Events" :key="name">
-    <div class="event" loading='lazy'>
-      <a :href="`${item.url}`">
-        <img :src="`events/assets/${item.image}`" :alt="`${name}`" />
+    <div class="event" loading="lazy">
+      <a :href="`${item.url || ''}`">
+        <img :src="`/events/assets/${item.image}`" :alt="`${name}`" />
       </a>
       <div class="text-wrapper">
-        <h3> {{ name }} </h3>
+        <h3>{{ name }}</h3>
         <p>
-          {{
-            item.lang
-            ? item.lang
-            : "English / Mandarian / Wu / Japanese"
-          }}
+          {{ item.lang ? item.lang : "English / Mandarian / Wu / Japanese" }}
         </p>
-        <a v-if="item.link && item.link.type" class="link-type" :href="`${item.url}`">
+        <a
+          v-if="item.link && item.link.type"
+          class="link-type"
+          :href="`${item.url || ''}`"
+        >
           {{ item.link.type }}
         </a>
-        <p> {{ item.description }} </p>
+        <p>{{ item.description }}</p>
       </div>
     </div>
   </div>
 </template>
 
-<script lang="jsx">
-import eventslist from '/public/events/events.yaml'
-
-export default {
-  setup() {
-    return { eventslist }
-  }
-};
+<script setup>
+import eventslist from "/public/events/events.yaml";
 </script>
 
 <style lang="scss">

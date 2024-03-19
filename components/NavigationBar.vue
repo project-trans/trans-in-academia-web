@@ -3,9 +3,9 @@
     <div id="logo">
       <img src="/TIA_LOGO_L_Oneline.svg">
     </div>
-    <Transition id="logo_burger">
+    <div id="logo_burger">
       <img src='/logo_clip.svg'>
-    </Transition>
+    </div>
     <button id="burger" @click="unfold">
       <img :src="`${burgerStatus ? '/burger_close.svg' : '/burger.svg'}`">
     </button>
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import { Transition, ref } from 'vue'
+import { Transition, ref } from 'vue';
 const burgerStatus = ref(false)
 const unfold = () => {
   burgerStatus.value = !burgerStatus.value;
