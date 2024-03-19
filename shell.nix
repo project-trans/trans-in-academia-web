@@ -2,7 +2,6 @@
 pkgs.mkShell {
   buildInputs = with pkgs;[
     nodejs
-    nodePackages.vue-cli
   ];
   shellHook = ''
     mkdir -p $TMPDIR/bin
