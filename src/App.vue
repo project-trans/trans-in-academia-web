@@ -1,26 +1,26 @@
-<template>
-  <bg />
-  <NavigationBar />
-  <HomePage />
-  <FooterBar />
-</template>
-
 <script>
 import HomePage from './components/HomePage.vue'
 import NavigationBar from './components/NavigationBar.vue'
 import FooterBar from './components/FooterBar.vue'
-import "@fontsource/inter";
-import "@fontsource/inter-tight";
+import '@fontsource/inter'
+import '@fontsource/inter-tight'
 
 export default {
   name: 'App',
   components: {
     HomePage,
     NavigationBar,
-    FooterBar
-  }
+    FooterBar,
+  },
 }
 </script>
+
+<template>
+  <bg />
+  <NavigationBar />
+  <HomePage />
+  <FooterBar />
+</template>
 
 <style lang="scss">
 #app {
@@ -36,7 +36,7 @@ bg {
   position: fixed;
   height: 100vh;
   width: 100%;
-  background-color: #F1F5F9;
+  background-color: #f1f5f9;
 }
 
 body {

@@ -23,7 +23,7 @@ Events:
       type: register
       url: https://linktr.ee/oneamongus
 
-  "Bright, Hope, Dream: TiA! Academic and Life Abroad Workshop":
+  'Bright, Hope, Dream: TiA! Academic and Life Abroad Workshop':
     time: 2023-10-28T14:00:00+00:00
     image: bhd-poster.jpg
     past: yes
@@ -32,7 +32,7 @@ Events:
 
       Join our Social Media for details.
 
-  "Reading Group: Lacanian Psychoanalysis for Activists":
+  'Reading Group: Lacanian Psychoanalysis for Activists':
     image: lacan-reading.png
     past: yes
     description: >
@@ -51,7 +51,7 @@ Events:
     past: yes
     link:
       type: replay
-      url: "https://www.youtube.com/watch?v=TGhNTd-2I3c"
+      url: 'https://www.youtube.com/watch?v=TGhNTd-2I3c'
     description: >
       Livestream reading of Night of the Milky Way Railway on TDOV 2023, by One Among Us & Project Trans.
       Replay is available on YouTube.

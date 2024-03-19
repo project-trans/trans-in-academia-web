@@ -1,10 +1,12 @@
 {
   "name": "trans-in-academia-web",
+  "type": "module",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "lint": "vue-cli-service lint",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "build": "nuxt generate",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
@@ -20,24 +22,13 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.8.3",
     "@rollup/plugin-yaml": "^4.1.2",
-    "eslint": "^7.32.0",
+    "@unocss/eslint-plugin": "^0.58.5",
+    "eslint": "^8.40.0",
+    "eslint-plugin-format": "^0.1.0",
     "eslint-plugin-vue": "^8.0.3",
     "sass": "^1.72.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "@typescript-eslint/parser"
-    },
-    "rules": {}
   },
   "browserslist": [
     "> 1%",

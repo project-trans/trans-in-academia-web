@@ -1,8 +1,12 @@
+<script setup>
+import eventslist from '/public/events/events.yaml'
+</script>
+
 <template>
   <div v-for="(item, name) in eventslist.Events" :key="name">
     <div class="event" loading="lazy">
       <a :href="`${item.url || ''}`">
-        <img :src="`/events/assets/${item.image}`" :alt="`${name}`" />
+        <img :src="`/events/assets/${item.image}`" :alt="`${name}`">
       </a>
       <div class="text-wrapper">
         <h3>{{ name }}</h3>
@@ -21,10 +25,6 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import eventslist from "/public/events/events.yaml";
-</script>
 
 <style lang="scss">
 .nolink {
@@ -59,13 +59,13 @@ div {
         font-size: 1.5rem;
         margin-top: 0;
         margin-bottom: 0;
-        font-family: "Inter Tight";
+        font-family: 'Inter Tight';
         font-weight: 500;
       }
 
       p {
         text-align: left;
-        font-family: "Inter";
+        font-family: 'Inter';
         margin-top: 0;
         color: #0000009a;
       }

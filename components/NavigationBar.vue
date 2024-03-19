@@ -1,23 +1,42 @@
+<script>
+import { Transition, ref } from 'vue'
+
+const burgerStatus = ref(false)
+function unfold() {
+  burgerStatus.value = !burgerStatus.value
+}
+export default {
+  name: 'NavigationBar',
+  components: { Transition },
+  setup() {
+    return { burgerStatus }
+  },
+  methods: {
+    unfold,
+  },
+}
+</script>
+
 <template>
   <div class="nav">
     <div id="logo">
       <img src="/TIA_LOGO_L_Oneline.svg">
     </div>
     <div id="logo_burger">
-      <img src='/logo_clip.svg'>
+      <img src="/logo_clip.svg">
     </div>
     <button id="burger" @click="unfold">
       <img :src="`${burgerStatus ? '/burger_close.svg' : '/burger.svg'}`">
     </button>
     <Transition>
-      <div id="burger-items" v-show="burgerStatus">
+      <div v-show="burgerStatus" id="burger-items">
         <li><a href="#"><span>Events</span></a></li>
         <li><a href="https://lib.oau.edu.kg"><span>Library</span></a></li>
         <li><a href="https://uniguide.oau.edu.kg"><span>UniGuide</span></a></li>
       </div>
     </Transition>
     <Transition>
-      <div id="mask" v-show="burgerStatus" />
+      <div v-show="burgerStatus" id="mask" />
     </Transition>
     <div id="normal">
       <li><a href="#" class="current"><img src="/LOGO Graph.svg"><span>Trans in Academia!</span></a></li>
@@ -27,24 +46,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import { Transition, ref } from 'vue';
-const burgerStatus = ref(false)
-const unfold = () => {
-  burgerStatus.value = !burgerStatus.value;
-}
-export default {
-  name: "NavigationBar",
-  setup() {
-    return { burgerStatus };
-  },
-  methods: {
-    unfold,
-  },
-  components: { Transition }
-}
-</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
@@ -87,7 +88,8 @@ export default {
     margin-left: 2rem;
     margin-right: 2rem;
 
-    li.placeholder {}
+    li.placeholder {
+    }
 
     li {
       // margin: auto 3rem;
@@ -121,7 +123,6 @@ export default {
         color: black;
         font-family: Sarasa-Gothic-SemiBold;
       }
-
     }
   }
 }
@@ -160,7 +161,6 @@ export default {
 //     column-count: 3;
 //   }
 // }
-
 
 // // mobile
 // @media screen and (max-width: 768px) {
@@ -315,4 +315,5 @@ export default {
 // .v-enter-from,
 // .v-leave-to {
 //   opacity: 0;
-// }</style>
+// }
+</style>

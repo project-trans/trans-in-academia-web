@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import '@fontsource/inter'
+import '@fontsource/inter-tight'
+</script>
+
 <template>
   <div id="app">
     <div class="bg" />
@@ -7,14 +12,9 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import "@fontsource/inter";
-import "@fontsource/inter-tight";
-</script>
-
 <style lang="scss">
 #app {
-  font-family: "Sarasa-Gothic-Regular", "Inter", sans-serif;
+  font-family: 'Sarasa-Gothic-Regular', 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
@@ -35,11 +35,11 @@ body {
 
 @font-face {
   font-family: Sarasa-Gothic-Regular;
-  src: url("~/assets/fonts/SarasaGothicSC-Regular.ttf");
+  src: url('~/assets/fonts/SarasaGothicSC-Regular.ttf');
 }
 
 @font-face {
   font-family: Sarasa-Gothic-SemiBold;
-  src: url("~/assets/fonts/SarasaGothicSC-SemiBold.ttf");
+  src: url('~/assets/fonts/SarasaGothicSC-SemiBold.ttf');
 }
 </style>
