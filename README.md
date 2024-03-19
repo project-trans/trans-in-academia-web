@@ -15,11 +15,11 @@ npm install
 ### Compiles and hot-reloads for development
 
 ```bash
-npm dev
+npm run dev
 ```
 
 ### Compiles and minifies for production
 
 ```bash
-npm build
+npm run build
 ```
