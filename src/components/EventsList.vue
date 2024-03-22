@@ -10,7 +10,7 @@
           {{
             item.lang
             ? item.lang
-            : "English / Mandarian / Wu / Japanese"
+            : "English / Mandarin / Wu / Japanese"
           }}
         </p>
         <a v-if="item.link && item.link.type" class="link-type" :href="`${item.url}`">
