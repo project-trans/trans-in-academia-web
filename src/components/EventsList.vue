@@ -6,6 +6,9 @@
       </a>
       <div class="text-wrapper">
         <h3> {{ name }} </h3>
+        <p v-if="item.time">
+          {{ Date(item.time).toLocaleString() }}
+        </p>
         <p>
           {{
             item.lang
