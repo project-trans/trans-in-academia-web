@@ -7,7 +7,7 @@
       <div class="text-wrapper">
         <h3> {{ name }} </h3>
         <p v-if="item.time">
-          {{ (() => { var a = new Date(item.time); return a.toLocaleString();})() }}
+          {{ (new Date(item.time)).toLocaleString() }}
         </p>
         <p>
           {{
