@@ -1,7 +1,7 @@
 <template>
   <div v-for="(item, name) in eventslist.Events" :key="name">
     <div class="event" loading='lazy'>
-      <a :href="`${item.url}`">
+      <a :href="`${item?.link?.url}`">
         <img :src="`events/assets/${item.image}`" :alt="`${name}`" />
       </a>
       <div class="text-wrapper">
@@ -9,11 +9,11 @@
         <p>
           {{
             item.lang
-            ? item.lang
-            : "English / Mandarin / Wu / Japanese"
+            ? item.lang.reduce((x, y) => x + " / " + y)
+            : "English / 普通话 / 吳語 / 日本語"
           }}
         </p>
-        <a v-if="item.link && item.link.type" class="link-type" :href="`${item.url}`">
+        <a v-if="item.link && item.link.type" class="link-type" :href="`${item.link.url}`">
           {{ item.link.type }}
         </a>
         <p> {{ item.description }} </p>
