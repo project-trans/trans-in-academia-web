@@ -5,19 +5,22 @@ import eventslist from '/public/events/events.yaml'
 <template>
   <div v-for="(item, name) in eventslist.Events" :key="name">
     <div class="event" loading="lazy">
-      <a :href="`${item.url || ''}`">
-        <img :src="`/events/assets/${item.image}`" :alt="`${name}`">
+      <a :href="`${item?.link?.url}`">
+        <img :src="`events/assets/${item.image}`" :alt="`${name}`">
       </a>
       <div class="text-wrapper">
-        <h3>{{ name }}</h3>
-        <p>
-          {{ item.lang ? item.lang : "English / Mandarian / Wu / Japanese" }}
+        <h3> {{ name }} </h3>
+        <p v-if="item.time">
+          {{ (new Date(item.time)).toLocaleString() }}
         </p>
-        <a
-          v-if="item.link && item.link.type"
-          class="link-type"
-          :href="`${item.url || ''}`"
-        >
+        <p>
+          {{
+            item.lang
+              ? item.lang.reduce((x, y) => `${x} / ${y}`)
+              : "English / 普通话 / 吳語 / 日本語"
+          }}
+        </p>
+        <a v-if="item.link && item.link.type" class="link-type" :href="`${item.link.url}`">
           {{ item.link.type }}
         </a>
         <p>{{ item.description }}</p>
