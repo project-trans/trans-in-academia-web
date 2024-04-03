@@ -34,8 +34,7 @@ pnpm-debug.log*
 *.sw?
 
 # misc
-pnpm-lock.yaml
-.pnpm-store
+package-lock.json
 
 # Local env files
 .env

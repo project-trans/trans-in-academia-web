@@ -2,10 +2,8 @@
 pkgs.mkShell {
   buildInputs = with pkgs;[
     nodejs
+    corepack
   ];
   shellHook = ''
-    mkdir -p $TMPDIR/bin
-    corepack enable --install-directory=$TMPDIR/bin
-    export PATH=$TMPDIR/bin:$PATH
   '';
 }
