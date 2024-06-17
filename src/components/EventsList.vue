@@ -16,10 +16,10 @@
             : "English / 普通话 / 吳語 / 日本語"
           }}
         </p>
-        <a v-if="item.link && item.link.type" class="link-type" :href="`${item.link.url}`">
+        <a v-if="item.link && item.link.type" class="link-type" :href="`${item.link.url}`" target="_blank">
           {{ item.link.type }}
         </a>
-        <p> {{ item.description }} </p>
+          <p class="markdown" v-if="!!item.description" v-html="this.marked(item.description.replaceAll('\n', '\n\n'))" />
       </div>
     </div>
   </div>
@@ -27,15 +27,21 @@
 
 <script lang="jsx">
 import eventslist from '/public/events/events.yaml'
+import {marked} from "marked";
 
 export default {
   setup() {
     return { eventslist }
+  },
+  created() {
+    this.marked = marked
   }
 };
 </script>
 
 <style lang="scss">
+@import '~@/style/markdown.scss';
+
 .nolink {
   display: none;
 }
@@ -72,21 +78,14 @@ div {
         font-weight: 500;
       }
 
-      p {
-        text-align: left;
-        font-family: "Inter";
-        margin-top: 0;
-        color: #0000009a;
-      }
-
       .link-type {
         color: black;
         margin: 0 0 1rem 0;
         border: 2px solid black;
         text-decoration: none;
-        width: min-content;
+        width: fit-content;
         border-radius: 2rem;
-        padding: 0.05rem 0.5rem;
+        padding: 0.15rem 0.5rem;
       }
     }
   }
