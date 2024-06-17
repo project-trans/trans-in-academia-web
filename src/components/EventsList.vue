@@ -19,7 +19,7 @@
         <a v-if="item.link && item.link.type" class="link-type" :href="`${item.link.url}`">
           {{ item.link.type }}
         </a>
-        <p v-html="item.description?.replaceAll('\n', '<br />')" />
+          <p v-if="!!item.description" v-html="this.marked(item.description?.replaceAll('\n', '<br />'))" />
       </div>
     </div>
   </div>
@@ -27,10 +27,14 @@
 
 <script lang="jsx">
 import eventslist from '/public/events/events.yaml'
+import {marked} from "marked";
 
 export default {
   setup() {
     return { eventslist }
+  },
+  created() {
+    this.marked = marked
   }
 };
 </script>
