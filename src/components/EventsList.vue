@@ -19,7 +19,7 @@
         <a v-if="item.link && item.link.type" class="link-type" :href="`${item.link.url}`">
           {{ item.link.type }}
         </a>
-        <p> {{ item.description }} </p>
+        <p v-html="item.description?.replaceAll('\n', '<br />')" />
       </div>
     </div>
   </div>
@@ -77,6 +77,10 @@ div {
         font-family: "Inter";
         margin-top: 0;
         color: #0000009a;
+        br {
+            font-family: "Inter";
+            margin: 0.5rem 0;
+        }
       }
 
       .link-type {
@@ -84,9 +88,9 @@ div {
         margin: 0 0 1rem 0;
         border: 2px solid black;
         text-decoration: none;
-        width: min-content;
+        width: fit-content;
         border-radius: 2rem;
-        padding: 0.05rem 0.5rem;
+        padding: 0.15rem 0.5rem;
       }
     }
   }
