@@ -6,9 +6,19 @@
 
   h1, h2 {
     border-bottom: #0000009a solid 1px;
+    font-size: 1.5rem;
   }
 
   br {
     margin-bottom: 1rem;
+  }
+
+  blockquote {
+    margin: 0;
+    padding-left: 1rem;
+    background: repeating-linear-gradient(45deg, rgba(240, 248, 255, 45%), rgba(240, 248, 255, 45%) 10px, rgba(240, 248, 255, 5%) 10px, rgba(240, 248, 255, 5%) 20px);
+
+    border-left: #9dd0ee solid 5px;
+    border-radius: 1rem 0 0 1rem;
   }
 }
