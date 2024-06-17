@@ -16,7 +16,7 @@
             : "English / 普通话 / 吳語 / 日本語"
           }}
         </p>
-        <a v-if="item.link && item.link.type" class="link-type" :href="`${item.link.url}`">
+        <a v-if="item.link && item.link.type" class="link-type" :href="`${item.link.url}`" target="_blank">
           {{ item.link.type }}
         </a>
           <p v-if="!!item.description" v-html="this.marked(item.description)" />
