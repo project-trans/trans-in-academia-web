@@ -19,7 +19,7 @@
         <a v-if="item.link && item.link.type" class="link-type" :href="`${item.link.url}`" target="_blank">
           {{ item.link.type }}
         </a>
-          <p class="markdown" v-if="!!item.description" v-html="this.marked(item.description)" />
+          <p class="markdown" v-if="!!item.description" v-html="this.marked(item.description.replaceAll('\n', '\n\n'))" />
       </div>
     </div>
   </div>
