@@ -19,7 +19,7 @@
         <a v-if="item.link && item.link.type" class="link-type" :href="`${item.link.url}`" target="_blank">
           {{ item.link.type }}
         </a>
-          <p v-if="!!item.description" v-html="this.marked(item.description)" />
+          <p class="markdown" v-if="!!item.description" v-html="this.marked(item.description)" />
       </div>
     </div>
   </div>
@@ -40,6 +40,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '~@/style/markdown.scss';
+
 .nolink {
   display: none;
 }
@@ -74,16 +76,6 @@ div {
         margin-bottom: 0;
         font-family: "Inter Tight";
         font-weight: 500;
-      }
-
-      p {
-        text-align: left;
-        font-family: "Inter";
-        margin-top: 0;
-        color: #0000009a;
-        br {
-            margin-bottom: 1rem;
-        }
       }
 
       .link-type {
