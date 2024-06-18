@@ -60,5 +60,13 @@
     hr {
       border-image: repeating-linear-gradient(45deg, #f5aac5, #f5aac5 10px, #ebe3f2 10px, #ebe3f2 20px) 0.5;
     }
+
+    a {
+      color: #f9e2af;
+
+      &:active {
+        color: #fab387;
+      }
+    }
   }
 }

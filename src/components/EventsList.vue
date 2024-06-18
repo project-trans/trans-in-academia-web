@@ -90,4 +90,27 @@ div {
     }
   }
 }
+
+@media (prefers-color-scheme: dark) {
+    .nolink {
+        display: none;
+    }
+
+    div {
+        .event {
+            box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.2);
+            background-color: black;
+        }
+
+        .text-wrapper {
+            color: white;
+
+            .link-type {
+                color: white !important;
+                border: 2px solid white !important;
+                border-radius: 2rem !important;
+            }
+        }
+    }
+}
 </style>
