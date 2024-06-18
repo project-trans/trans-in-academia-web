@@ -6,7 +6,15 @@
 
   h1, h2 {
     border-bottom: #0000009a solid 1px;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
+  }
+
+  h3 {
+    font-size: 1.2rem !important;
+  }
+
+  h4, h5, h6 {
+    font-size: 1rem !important;
   }
 
   br {
@@ -22,7 +30,17 @@
     border-radius: 1rem 0 0 1rem;
   }
 
-  ul, ol {
+  ul {
+    padding-left: 1.1rem;
+  }
+
+  ol {
     padding-left: 1.4rem;
+  }
+
+  hr {
+    border-style: solid;
+    border-width: 1px;
+    border-image: repeating-linear-gradient(45deg, #54a4f3, #54a4f3 10px, #7fbdf7 10px, #7fbdf7 20px) 0.5;
   }
 }
