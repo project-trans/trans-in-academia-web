@@ -56,9 +56,11 @@ div {
     background-color: white;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
     break-inside: avoid;
+    transition: all 0.5s cubic-bezier(0.45, 0.65, 0.875, 0.80);
 
-    :hover {
-      transition: cubic-bezier(); //@TODO
+    &:hover {
+      transform: translateY(-5px);
+      filter: drop-shadow(0px 10px 5px #191c241d);
     }
 
     img {
@@ -98,8 +100,13 @@ div {
 
     div {
         .event {
-            box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.2);
+            box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.05);
             background-color: black;
+
+            &:hover {
+                transform: none;
+                filter: drop-shadow(0px 0px 10px #fadce7);
+            }
         }
 
         .text-wrapper {
