@@ -64,11 +64,18 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 // middle
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 642px) {
   div .content events {
-    width: 75%;
+    width: 100%;
     column-count: 2;
   }
+}
+
+@media screen and (min-width: 996px) {
+    div .content events {
+        width: 100%;
+        column-count: 3;
+    }
 }
 
 // big screens
@@ -81,7 +88,7 @@ export default {
 
 
 // mobile
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 642px) {
   div .content events {
     column-count: 1;
     margin: auto;
