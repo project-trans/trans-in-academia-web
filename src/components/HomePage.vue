@@ -194,4 +194,16 @@ img {
   width: 100%;
   vertical-align: middle;
 }
+
+@media (prefers-color-scheme: dark) {
+    .text-wrapper {
+        h3 {
+            color: aliceblue !important;
+        }
+
+        p {
+            color: white !important;
+        }
+    }
+}
 </style>

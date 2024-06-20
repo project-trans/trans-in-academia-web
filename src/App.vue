@@ -52,4 +52,14 @@ body {
   font-family: Sarasa-Gothic-SemiBold;
   src: url('assets/fonts/SarasaGothicSC-SemiBold.ttf');
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e2e;
+    }
+
+    bg {
+        background-color: #1e1e2e;
+    }
+}
 </style>
