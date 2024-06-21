@@ -126,7 +126,7 @@ export default {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+[data-theme="dark"] {
     .nav {
         background-color: #181825;
     }

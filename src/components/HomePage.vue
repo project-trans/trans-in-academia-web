@@ -195,7 +195,7 @@ img {
   vertical-align: middle;
 }
 
-@media (prefers-color-scheme: dark) {
+[data-theme="dark"] {
     .text-wrapper {
         h3 {
             color: aliceblue !important;

@@ -93,7 +93,7 @@ div {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+[data-theme="dark"] {
     .nolink {
         display: none;
     }

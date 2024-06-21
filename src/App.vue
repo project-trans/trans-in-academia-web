@@ -11,6 +11,7 @@ import NavigationBar from './components/NavigationBar.vue'
 import FooterBar from './components/FooterBar.vue'
 import "@fontsource/inter";
 import "@fontsource/inter-tight";
+import {applyTheme} from "./logic/theme";
 
 export default {
   name: 'App',
@@ -18,6 +19,9 @@ export default {
     HomePage,
     NavigationBar,
     FooterBar
+  },
+  mounted() {
+    applyTheme()
   }
 }
 </script>
@@ -53,7 +57,7 @@ body {
   src: url('assets/fonts/SarasaGothicSC-SemiBold.ttf');
 }
 
-@media (prefers-color-scheme: dark) {
+[data-theme="dark"] {
     body {
         background-color: #1e1e2e;
     }
