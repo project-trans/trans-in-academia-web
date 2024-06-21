@@ -20,7 +20,7 @@ import {applyTheme, getTheme, setTheme} from "@/logic/theme";
 let theme = ref(getTheme())
 
 function changeTheme() {
-    if (this.theme === 'dark') {
+    if (theme.value === 'dark') {
         setTheme('light')
     } else {
         setTheme('dark')
