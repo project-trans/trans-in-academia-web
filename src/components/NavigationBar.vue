@@ -138,4 +138,10 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 460px) {
+    .notcurrent {
+        display: none !important;
+    }
+}
 </style>
