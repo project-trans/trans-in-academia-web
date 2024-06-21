@@ -24,12 +24,14 @@
       <li><a href="https://lib.oau.edu.kg" class="notcurrent"><span>Library</span></a></li>
       <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span></a></li>
       <!-- <li class="placeholder"></li> -->
+      <ThemeButton />
     </div>
   </div>
 </template>
 
 <script>
 import { Transition, ref } from 'vue'
+import ThemeButton from "@/components/ThemeButton.vue";
 const burgerStatus = ref(false)
 const unfold = () => {
   burgerStatus.value = !burgerStatus.value;
@@ -42,7 +44,7 @@ export default {
   methods: {
     unfold,
   },
-  components: { Transition }
+  components: { Transition, ThemeButton }
 }
 </script>
 
