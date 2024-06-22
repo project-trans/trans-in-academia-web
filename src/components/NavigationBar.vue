@@ -20,11 +20,12 @@
       <div id="mask" v-show="burgerStatus" />
     </Transition>
     <div id="normal">
-      <li><a href="#" class="current"><img src="/LOGO Graph.svg"><span>Trans in Academia!</span></a></li>
+      <li><a class="current" v-on:click="showRed()"><img src="/LOGO Graph.svg"><span>Trans in Academia!</span></a></li>
       <li><a href="https://lib.oau.edu.kg" class="notcurrent"><span>Library</span></a></li>
       <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span></a></li>
       <!-- <li class="placeholder"></li> -->
       <ThemeButton />
+      <RedirectMenu v-show="redirectMenuStatus" v-bind:style="redirectStyle"/>
     </div>
   </div>
 </template>
@@ -32,19 +33,36 @@
 <script>
 import { Transition, ref } from 'vue'
 import ThemeButton from "@/components/ThemeButton.vue";
+import RedirectMenu from "@/components/RedirectMenu.vue";
 const burgerStatus = ref(false)
+const redirectMenuStatus = ref(false)
+const redirectStyle = ref('opacity: 0');
 const unfold = () => {
   burgerStatus.value = !burgerStatus.value;
+}
+const showRed = () => {
+  if (window.innerWidth > 460) {
+      redirectMenuStatus.value = false;
+      return;
+  }
+  redirectMenuStatus.value = !redirectMenuStatus.value;
+  if (redirectMenuStatus.value) {
+      redirectStyle.value = 'opacity: 1;';
+  }
+  else {
+      redirectStyle.value = 'opacity: 0;';
+  }
 }
 export default {
   name: "NavigationBar",
   setup() {
-    return { burgerStatus };
+    return { burgerStatus, redirectMenuStatus, redirectStyle };
   },
   methods: {
     unfold,
+    showRed
   },
-  components: { Transition, ThemeButton }
+  components: {RedirectMenu, Transition, ThemeButton }
 }
 </script>
 
