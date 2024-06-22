@@ -25,7 +25,7 @@
       <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span></a></li>
       <!-- <li class="placeholder"></li> -->
       <ThemeButton />
-      <RedirectMenu v-show="redirectMenuStatus" v-bind:style="redirectStyle"/>
+      <RedirectMenu v-show="redirectMenuStatus"/>
     </div>
   </div>
 </template>
@@ -46,12 +46,6 @@ const showRed = () => {
       return;
   }
   redirectMenuStatus.value = !redirectMenuStatus.value;
-  if (redirectMenuStatus.value) {
-      redirectStyle.value = 'opacity: 1;';
-  }
-  else {
-      redirectStyle.value = 'opacity: 0;';
-  }
 }
 export default {
   name: "NavigationBar",
