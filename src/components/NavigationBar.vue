@@ -36,7 +36,6 @@ import ThemeButton from "@/components/ThemeButton.vue";
 import RedirectMenu from "@/components/RedirectMenu.vue";
 const burgerStatus = ref(false)
 const redirectMenuStatus = ref(false)
-const redirectStyle = ref('opacity: 0');
 const unfold = () => {
   burgerStatus.value = !burgerStatus.value;
 }
@@ -50,7 +49,7 @@ const showRed = () => {
 export default {
   name: "NavigationBar",
   setup() {
-    return { burgerStatus, redirectMenuStatus, redirectStyle };
+    return { burgerStatus, redirectMenuStatus };
   },
   methods: {
     unfold,

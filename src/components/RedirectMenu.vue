@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.75s ease-in-out;
+    transition: all 0.5s ease;
 
     .link {
         display: flex;
