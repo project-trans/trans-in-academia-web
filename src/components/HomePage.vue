@@ -9,9 +9,8 @@
             font-size: 0.75rem;
             color: gray;
           ">Pinned</h3>
-          <p style="color: black;">A community for diasporic Chinese trans and gender nonconforming people pursuing
-            academic and career goals. </p>
-          <p style="color: black;">分享与跨性别有关的学术动态，帮助跨性别者及友跨人士求学、进修、工作，以跨性别学术人的视角发声。</p>
+          <p style="color: black;">Trans in Academia! (TiA!) is an organization established by Chinese trans people in 2022. TiA! aims to document theoretical and practical knowledge from the Sinophone trans community, help trans people pursue studies, professional development, and employment, share academic knowledge related to trans issues, and produce original content from the perspective of trans people.</p>
+          <p style="color: black;">跨儿学术小组 Trans in Academia! 建立于 2022 年。作为由华语跨儿建立和主导的组织，TiA! 致力于记录我们所在社群的理论和实践知识，帮助跨儿求学、进修、工作，分享与跨儿有关的学术知识，并以跨儿的视角发声。</p>
         </div>
       </div>
       <div class="event social">
