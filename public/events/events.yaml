@@ -52,7 +52,7 @@ Events:
     past: no
     link:
       type: Join-加群
-      url: https://t.me/+dNNM9wL80fIyNzVl
+      url: "https://t.me/+dNNM9wL80fIyNzVl"
     description: >
       **领读人**：Shu，多伦多大学哲学系博士二年级  
       
@@ -66,50 +66,6 @@ Events:
 
       希望参加读书会的朋友，请在第一次读书会开始之前阅读完导言（Introduction）部分。  
     
-  
-  2024年 One Among Us × Project Trans 跨性别现身日纪念晚会:
-    lang:
-      - 普通话
-    time: 2024-03-31T20:00:00+08:00
-    image: OAU_TDOV_2024.jpg
-    past: yes
-    link:
-      type: Replay-查看回放 (Bilibili)
-      url: https://www.bilibili.com/video/BV14z421o76C/
-    description: >
-      马上又是3月31日，跨性别现身日了。  
-
-      One Among Us 和 Project Trans 今年也共同准备了一期现身日晚会。今年有大家熟悉的线上献声文学朗读，又新增了歌曲、诗歌和来信电台项目，以求展现跨性别伙伴们的风采，也为所有听众提供一些声音、陪伴与力量。  
-
-      漫漫千歌总有尽；唯胸中青森，可以长存。 3.31 北京时间晚八点，愿我们能带给你属于你的那片「青森」。  
-
-  2023 TDoR Craft Event in Toronto 跨性别纪念日特别节目:
-    lang:
-      - 普通话
-      - 吳語
-      - English
-      - 日本語
-    time: 2023-11-18T14:00:00-05:00
-    image: 2023TDOREvent.png
-    past: yes
-    link:
-      type: Replay-回放 (YouTube)
-      url: https://www.youtube.com/watch?v=QbgYWXa5Pm8&t=1109s
-    description: >
-      Join us on November 18, 2pm for our TDoR craft event.  
-      We welcome all participants to create a special gift, offering, or memento for their loved one(s).  
-
-      This event will be available in English, Mandarin Chinese, Wu Chinese, and Japanese.  
-
-      Location: 519 (519 Church St, Toronto)  
-
-      Registration is mandatory for this event.  
-      Please message us for any accommodation request.  
-
-  Ruins of Memorial:
-    lang:
-      - 普通话
-    image: ruins-of-memorial.png
 
   "Bright, Hope, Dream: TiA! Academic and Life Abroad Workshop":
     lang:
@@ -139,17 +95,4 @@ Events:
     past: yes
     description: >
       Online from 2023-04-22.  
-
-      First series of seminars ended. Second in preparation.  
-
-  Livestream reading of Night of the Milky Way Railway:
-    lang:
-      - 普通话
-    image: miyazawa-poster.jpg
-    past: yes
-    link:
-      type: Replay-回放
-      url: "https://www.youtube.com/watch?v=TGhNTd-2I3c"
-    description: >
-      Livestream reading of Night of the Milky Way Railway on TDOV 2023, by One Among Us & Project Trans.  
-      Replay is available on YouTube.   
+      First series of seminars ended. Second in preparation.
