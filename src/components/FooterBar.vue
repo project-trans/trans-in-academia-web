@@ -11,7 +11,7 @@
     <a rel="license"
        href="http://creativecommons.org/licenses/by/4.0/"> CC BY 4.0</a> Licensed
     <br/>
-    © <a href="https://oneamongus.ca">One Among Us Transgender Support</a> 2023
+    © Trans in Academia! 2023-2024
     <br/>
   </div>
 </template>
