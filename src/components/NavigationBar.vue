@@ -12,7 +12,7 @@
     <Transition>
       <div id="burger-items" v-show="burgerStatus">
         <li><a href="#"><span>Events</span></a></li>
-        <li><a href="https://lib.oau.edu.kg"><span>Library</span></a></li>
+        <li><a href="https://lib.transinacademia.org/"><span>Library</span></a></li>
         <li><a href="https://uniguide.oau.edu.kg"><span>UniGuide</span></a></li>
       </div>
     </Transition>
@@ -21,7 +21,7 @@
     </Transition>
     <div id="normal">
       <li><a href="#" class="current"><img src="/LOGO Graph.svg"><span>Trans in Academia!</span></a></li>
-      <li><a href="https://lib.oau.edu.kg" class="notcurrent"><span>Library</span></a></li>
+      <li><a href="https://lib.transinacademia.org/" class="notcurrent"><span>Library</span></a></li>
       <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span></a></li>
       <!-- <li class="placeholder"></li> -->
     </div>
