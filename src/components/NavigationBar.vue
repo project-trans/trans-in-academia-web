@@ -29,30 +29,43 @@
 
     <!-- Desktop Menu -->
     <div id="normal">
-      <li><a href="#" class="current"><img src="/LOGO Graph.svg"><span>Trans in Academia!</span></a></li>
-      <li><a href="https://lib.transinacademia.org/" class="notcurrent"><span>Library</span></a></li>
-      <li><a href="https://uniguide.oau.edu.kg" class="notcurrent"><span>UniGuide</span></a></li>
+      <li>
+        <a href="#" class="current"
+          ><img src="/LOGO Graph.svg" alt="Logo Graph" /><span
+            >Trans in Academia!</span
+          ></a
+        >
+      </li>
+      <li>
+        <a href="https://lib.transinacademia.org/" class="notcurrent"
+          ><span>Library</span></a
+        >
+      </li>
+      <li>
+        <a href="https://uniguide.transacademic.org/" class="notcurrent"
+          ><span>UniGuide</span></a
+        >
+      </li>
       <!-- <li class="placeholder"></li> -->
     </div>
   </div>
 </template>
 
 <script>
-import { Transition, ref } from 'vue'
-const burgerStatus = ref(false)
+import { ref } from 'vue';
+const burgerStatus = ref(false);
 const unfold = () => {
   burgerStatus.value = !burgerStatus.value;
-}
+};
 export default {
-  name: "NavigationBar",
+  name: 'NavigationBar',
   setup() {
     return { burgerStatus };
   },
   methods: {
-    unfold,
-  },
-  components: { Transition }
-}
+    unfold
+  }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

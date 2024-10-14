@@ -1,5 +1,4 @@
 <template>
-  <bg />
   <NavigationBar />
   <HomePage />
   <FooterBar />
@@ -31,16 +30,9 @@ export default {
   flex-direction: column;
 }
 
-bg {
-  z-index: -1;
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  background-color: #F1F5F9;
-}
-
 body {
-  margin: 0px;
+  margin: 0;
+  background-color: #f1f5f9;
 }
 
 @font-face {
@@ -54,12 +46,8 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #1e1e2e;
-    }
-
-    bg {
-        background-color: #1e1e2e;
-    }
+  body {
+    background-color: #1e1e2e;
+  }
 }
 </style>
