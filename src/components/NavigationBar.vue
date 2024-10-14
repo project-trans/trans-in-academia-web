@@ -17,9 +17,19 @@
     <!-- Mobile Menu -->
     <Transition>
       <div id="burger-items" v-show="burgerStatus">
-        <li><a href="#"><span>Events</span></a></li>
-        <li><a href="https://lib.transinacademia.org/"><span>Library</span></a></li>
-        <li><a href="https://uniguide.oau.edu.kg"><span>UniGuide</span></a></li>
+        <ul>
+          <li>
+            <a href="#"><span>Events</span></a>
+          </li>
+          <li>
+            <a href="https://lib.transinacademia.org/"><span>Library</span></a>
+          </li>
+          <li>
+            <a href="https://uniguide.transacademic.org/"
+              ><span>UniGuide</span></a
+            >
+          </li>
+        </ul>
       </div>
     </Transition>
 
