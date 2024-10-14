@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import HomePage from './components/HomePage.vue'
-import NavigationBar from './components/NavigationBar.vue'
-import FooterBar from './components/FooterBar.vue'
-import "@fontsource/inter";
-import "@fontsource/inter-tight";
+import HomePage from './components/HomePage.vue';
+import NavigationBar from './components/NavigationBar.vue';
+import FooterBar from './components/FooterBar.vue';
+import '@fontsource/inter';
+import '@fontsource/inter-tight';
 
 export default {
   name: 'App',
@@ -19,7 +19,7 @@ export default {
     NavigationBar,
     FooterBar
   }
-}
+};
 </script>
 
 <style lang="scss">

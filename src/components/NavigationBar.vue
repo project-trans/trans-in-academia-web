@@ -4,11 +4,16 @@
       <img src="/TIA_LOGO_L_Oneline.svg">
     </div>
     <Transition id="logo_burger">
-      <img src='/logo_clip.svg'>
+      <img v-if="burgerStatus" src="/logo_clip.svg" />
     </Transition>
     <button id="burger" @click="unfold">
-      <img :src="`${burgerStatus ? '/burger_close.svg' : '/burger.svg'}`">
+      <img
+        v-if="burgerStatus"
+        :src="`${burgerStatus ? '/burger_close.svg' : '/burger.svg'}`"
+      />
     </button>
+
+    <!-- Mobile Menu -->
     <Transition>
       <div id="burger-items" v-show="burgerStatus">
         <li><a href="#"><span>Events</span></a></li>
@@ -16,9 +21,12 @@
         <li><a href="https://uniguide.oau.edu.kg"><span>UniGuide</span></a></li>
       </div>
     </Transition>
+
     <Transition>
-      <div id="mask" v-show="burgerStatus" />
+      <div id="mask" v-show="burgerStatus"></div>
     </Transition>
+
+    <!-- Desktop Menu -->
     <div id="normal">
       <li><a href="#" class="current"><img src="/LOGO Graph.svg"><span>Trans in Academia!</span></a></li>
       <li><a href="https://lib.transinacademia.org/" class="notcurrent"><span>Library</span></a></li>
@@ -87,7 +95,8 @@ export default {
     margin-left: 2rem;
     margin-right: 2rem;
 
-    li.placeholder {}
+    li.placeholder {
+    }
 
     li {
       // margin: auto 3rem;
@@ -127,22 +136,22 @@ export default {
 }
 
 @media (prefers-color-scheme: dark) {
-    .nav {
-        background-color: #181825;
+  .nav {
+    background-color: #181825;
+  }
+
+  div#normal {
+    a {
+      color: #babbf1 !important;
     }
 
-    div#normal {
-        a {
-            color: #babbf1 !important;
-        }
-
-        a.current {
-            color: white !important;
-        }
-
-        a img {
-            filter: drop-shadow(0px 0px 5px #c6d0f5);
-        }
+    a.current {
+      color: white !important;
     }
+
+    a img {
+      filter: drop-shadow(0px 0px 5px #c6d0f5);
+    }
+  }
 }
 </style>

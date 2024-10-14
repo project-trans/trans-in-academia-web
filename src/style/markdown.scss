@@ -4,7 +4,8 @@
   margin-top: 0;
   color: #0000009a;
 
-  h1, h2 {
+  h1,
+  h2 {
     border-bottom: #0000009a solid 1px;
     font-size: 1.5rem !important;
   }
@@ -13,7 +14,9 @@
     font-size: 1.2rem !important;
   }
 
-  h4, h5, h6 {
+  h4,
+  h5,
+  h6 {
     font-size: 1rem !important;
   }
 
@@ -24,7 +27,13 @@
   blockquote {
     margin: 0;
     padding-left: 1rem;
-    background: repeating-linear-gradient(45deg, #7fbdf788, #7fbdf788 10px, #ebe3f288 10px, #ebe3f288 20px);
+    background: repeating-linear-gradient(
+      45deg,
+      #7fbdf788,
+      #7fbdf788 10px,
+      #ebe3f288 10px,
+      #ebe3f288 20px
+    );
 
     border-left: #9dd0ee solid 3.5px;
     border-radius: 1rem 0 0 1rem;
@@ -41,7 +50,14 @@
   hr {
     border-style: solid;
     border-width: 1px;
-    border-image: repeating-linear-gradient(45deg, #54a4f3, #54a4f3 10px, #7fbdf7 10px, #7fbdf7 20px) 0.5;
+    border-image: repeating-linear-gradient(
+        45deg,
+        #54a4f3,
+        #54a4f3 10px,
+        #7fbdf7 10px,
+        #7fbdf7 20px
+      )
+      0.5;
   }
 }
 
@@ -49,16 +65,24 @@
   .markdown {
     color: #ffffff9a;
 
-    h1, h2 {
+    h1,
+    h2 {
       border-bottom: #ffffff9a solid 1px;
     }
 
     blockquote {
-      background: rgba(221, 239, 252, 0.30)
+      background: rgba(221, 239, 252, 0.3);
     }
 
     hr {
-      border-image: repeating-linear-gradient(45deg, #f5aac5, #f5aac5 10px, #ebe3f2 10px, #ebe3f2 20px) 0.5;
+      border-image: repeating-linear-gradient(
+          45deg,
+          #f5aac5,
+          #f5aac5 10px,
+          #ebe3f2 10px,
+          #ebe3f2 20px
+        )
+        0.5;
     }
 
     a {

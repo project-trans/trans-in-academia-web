@@ -2,24 +2,31 @@
   <div class="margin"></div>
   <div class="content">
     <events>
-      <div class="event" style="padding-bottom: 0;">
-        <div class="text-wrapper" style="margin-bottom: 0;">
-          <h3 style="
-            margin: 1rem 0;
-            font-size: 0.75rem;
-            color: gray;
-          ">Pinned</h3>
-          <p style="color: black;">Trans in Academia! (TiA!) is an organization established by Chinese trans people in 2022. TiA! aims to document theoretical and practical knowledge from the Sinophone trans community, help trans people pursue studies, professional development, and employment, share academic knowledge related to trans issues, and produce original content from the perspective of trans people.</p>
-          <p style="color: black;">跨儿学术小组 Trans in Academia! 建立于 2022 年。作为由华语跨儿建立和主导的组织，TiA! 致力于记录我们所在社群的理论和实践知识，帮助跨儿求学、进修、工作，分享与跨儿有关的学术知识，并以跨儿的视角发声。</p>
+      <div class="event" style="padding-bottom: 0">
+        <div class="text-wrapper" style="margin-bottom: 0">
+          <h3 style="margin: 1rem 0; font-size: 0.75rem; color: gray">
+            Pinned
+          </h3>
+          <p style="color: black">
+            Trans in Academia! (TiA!) is an organization established by Chinese
+            trans people in 2022. TiA! aims to document theoretical and
+            practical knowledge from the Sinophone trans community, help trans
+            people pursue studies, professional development, and employment,
+            share academic knowledge related to trans issues, and produce
+            original content from the perspective of trans people.
+          </p>
+          <p style="color: black">
+            跨儿学术小组 Trans in Academia! 建立于 2022
+            年。作为由华语跨儿建立和主导的组织，TiA!
+            致力于记录我们所在社群的理论和实践知识，帮助跨儿求学、进修、工作，分享与跨儿有关的学术知识，并以跨儿的视角发声。
+          </p>
         </div>
       </div>
       <div class="event social">
         <div class="text-wrapper">
-          <h3 style="
-            margin: 1rem 0;
-            font-size: 0.75rem;
-            color: gray;
-          ">社交媒体</h3>
+          <h3 style="margin: 1rem 0; font-size: 0.75rem; color: gray">
+            社交媒体
+          </h3>
           <div>
             <a href="https://t.me/transacademicorg">
               <div><img src="social/tg.svg" />
@@ -44,20 +51,19 @@
           </div>
         </div>
       </div>
-      <div class="event placeholder">
-      </div>
+      <div class="event placeholder"></div>
       <EventsList />
     </events>
   </div>
 </template>
 
 <script>
-import EventsList from './EventsList.vue'
+import EventsList from './EventsList.vue';
 export default {
   components: {
     EventsList
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -71,10 +77,10 @@ export default {
 }
 
 @media screen and (min-width: 996px) {
-    div .content events {
-        width: 100%;
-        column-count: 3;
-    }
+  div .content events {
+    width: 100%;
+    column-count: 3;
+  }
 }
 
 // big screens
@@ -195,14 +201,14 @@ img {
 }
 
 @media (prefers-color-scheme: dark) {
-    .text-wrapper {
-        h3 {
-            color: aliceblue !important;
-        }
-
-        p {
-            color: white !important;
-        }
+  .text-wrapper {
+    h3 {
+      color: aliceblue !important;
     }
+
+    p {
+      color: white !important;
+    }
+  }
 }
 </style>
