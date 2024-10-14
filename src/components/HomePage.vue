@@ -29,22 +29,26 @@
           </h3>
           <div>
             <a href="https://t.me/transacademicorg">
-              <div><img src="social/tg.svg" />
+              <div>
+                <img src="social/tg.svg" alt="Telegram" />
                 <div>Telegram</div>
               </div>
             </a>
             <a href="https://discord.gg/A3exRdrEDp">
-              <div><img src="social/dis.svg" />
+              <div>
+                <img src="social/dis.svg" alt="Discord" />
                 <div>Discord</div>
               </div>
             </a>
             <a href="https://kazv.moe/users/tia">
-              <div><img src="social/fed.png" />
+              <div>
+                <img src="social/fed.png" alt="Fediverse" />
                 <div>Fediverse</div>
               </div>
             </a>
             <a href="https://x.com/transinacademia">
-              <div><img src="social/tw.svg" />
+              <div>
+                <img src="social/tw.svg" alt="Twitter" />
                 <div>Twitter</div>
               </div>
             </a>
@@ -91,7 +95,6 @@ export default {
   }
 }
 
-
 // mobile
 @media screen and (max-width: 642px) {
   div .content events {
@@ -109,10 +112,8 @@ export default {
   }
 
   .social .text-wrapper div {
-
     // flex-wrap: nowrap;
     a div {
-
       div {
         width: 70% !important;
       }

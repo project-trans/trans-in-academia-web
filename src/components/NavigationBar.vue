@@ -1,15 +1,16 @@
 <template>
   <div class="nav">
     <div id="logo">
-      <img src="/TIA_LOGO_L_Oneline.svg">
+      <img src="/TIA_LOGO_L_Oneline.svg" alt="Logo" />
     </div>
     <Transition id="logo_burger">
-      <img v-if="burgerStatus" src="/logo_clip.svg" />
+      <img v-if="burgerStatus" src="/logo_clip.svg" alt="Logo Clip" />
     </Transition>
     <button id="burger" @click="unfold">
       <img
         v-if="burgerStatus"
         :src="`${burgerStatus ? '/burger_close.svg' : '/burger.svg'}`"
+        alt="Burger Menu"
       />
     </button>
 
@@ -130,7 +131,6 @@ export default {
         color: black;
         font-family: Sarasa-Gothic-SemiBold;
       }
-
     }
   }
 }
