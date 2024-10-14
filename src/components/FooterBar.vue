@@ -17,10 +17,20 @@
     >
     Licensed
     <br />
-    © Trans in Academia! 2023-2024
+    © Trans in Academia! 2023-{{ currentYear }}
     <br />
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    currentYear() {
+      return new Date().getFullYear();
+    }
+  }
+};
+</script>
 
 <style scoped lang="scss">
 .footer {
